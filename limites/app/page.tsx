@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import NabBar from '@/Componentes/NavBAr/Bar';
 import Parte1 from '@/Componentes/Parte1/Parte1';
 import Parte2 from '@/Componentes/Parte2/Parte2';
+import { Parte3 } from '@/Componentes/Parte3/Parte3';
 
 
 const Container = styled.body({
@@ -27,6 +28,7 @@ export default function Home() {
       <NabBar/>
       <Parte1/>
       <Parte2/>
+      <Parte3/>
 
     </Container>
   )

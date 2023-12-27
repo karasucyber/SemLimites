@@ -22,9 +22,8 @@ const Titulo = styled.div({
     margin: "20px",
 })
 
-const ContainerT = styled.div({
+const ContainerG = styled.div({
     display: "flex",
-    justifyContent: 'flex-start',
     fontSize: "35px",   
     height: "100%",
     width: "50%",
@@ -32,11 +31,21 @@ const ContainerT = styled.div({
     margin: "20px",
 })
 
+const ContainerT = styled.div({
+    display: "flex",
+    fontSize: "35px",   
+    height: "100%",
+    width: "50%",
+    padding: "20px",
+    margin: "20px",
+    justifyContent: 'flex-end', 
+})
+
 const ContainerV = styled.div({
     display: "flex",
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-start', 
     height: "100%",
-    width: "100%",
+    width: "50%",
     background: "white",
     padding: "20px",
     margin: "20px",
@@ -52,21 +61,17 @@ export const Parte2 = () => {
         <Container> 
                 <Titulo> Quem somos</Titulo>
 
-            <ContainerT>
-                <p>aaaaaaaaaaaaaaaaaaaaaaaa </p>
+            <ContainerG>
+                <ContainerT>
+                <h1> aaaaaaaa</h1>
+                </ContainerT>
                 <ContainerV> 
                 <h1> aaaaaaaa</h1>
-
             </ContainerV>
-               
-            </ContainerT>
-
+            </ContainerG>
             <Titulo> Números </Titulo>
-
             <ContainerN> 
             <h1> aaaaaaaa</h1>
-
-
             </ContainerN>
         </Container>
     )
