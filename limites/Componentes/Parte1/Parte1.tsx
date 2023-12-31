@@ -35,17 +35,17 @@ const Content = styled.div`
 `;
 
 const ContainerT = styled.div`
-  font-size: 25px;
+  font-size: 50px;
   padding: 5px;
 `;
 
 const ContainerSubT = styled.div`
-  font-size: 25px;
+  font-size: 40px;
   padding: 5px;
 `;
 
 const ContainerB = styled.div`
-  font-size: 25px;
+  font-size: 35px;
   padding: 5px;
 `;
 

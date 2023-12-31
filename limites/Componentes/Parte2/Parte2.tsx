@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
 
@@ -9,7 +9,7 @@ const Container = styled.div({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "850px",
+    height: "105vh",
     width: "100%",
     background: "white"
 });
@@ -53,26 +53,38 @@ const ContainerN = styled.div({
     color: "black"
 });
 
-
-export const Parte2 = () => {
-    return(
-        <Container> 
-                <Titulo> Quem somos</Titulo>
-            <ContainerG>
-                <ContainerT>
-                <h1> Nosso objetivo !</h1>
-                </ContainerT>
-                <ContainerV>
-                <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
-
-                </ContainerV>
-            </ContainerG>
-            <Titulo> Números </Titulo>
-            <ContainerN> 
-            <h1> aaaaaaaa</h1>
-            </ContainerN>
-        </Container>
-    )
-}
-
-export default Parte2;
+const Parte2: React.FC = () => {
+    const [counterNumber, setCounterNumber] = useState(0);
+  
+    useEffect(() => {
+      const updateCounter = setInterval(() => {
+        setCounterNumber((prevCounter) => prevCounter + 1);
+      }, 1);
+  
+      return () => clearInterval(updateCounter);
+    }, []);
+  
+    return (
+      <Container>
+        <Titulo>Quem somos</Titulo>
+        <ContainerG>
+          <ContainerT>
+            <h1>Nosso objetivo !</h1>
+          </ContainerT>
+          <ContainerV>
+            <ReactPlayer url="https://www.youtube.com/watch?v=LXb3EKWsInQ" />
+          </ContainerV>
+        </ContainerG>
+        <Titulo>Você sabia que</Titulo>
+        <ContainerN>
+          <h1>
+            <span className="counter">{counterNumber}</span> De desempregados no
+            Brasil
+          </h1>
+        </ContainerN>
+        {/* Outros ContainerN semelhantes */}
+      </Container>
+    );
+  };
+  
+  export default Parte2;

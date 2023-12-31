@@ -19,7 +19,7 @@ const Container = styled.div`
   margin: 10px;
   top: 0px;
   width: 95%;
-  height: 0%;
+  height: %10;
   justify-content: flex-end;
   transition: border-bottom 0.3s ease; /* Adiciona uma transição para a propriedade da borda inferior */
 
@@ -32,27 +32,30 @@ const Container = styled.div`
 
 
 const ContainerBar = styled.div({
-    padding: "5px",
-    margin: "5px",
-    width: "10%",
-    height: "10%",
-    display: "flex",
-    justifyContent: "center",
-    fontSize: "17px",
-    color: "white",
+  padding: "5px",
+  margin: "5px",
+  width: "10%",
+  height: "10%",
+  display: "flex",
+  justifyContent: "center",
+  fontSize: "17px",
+  color: "white",
+  background: "rgba(255, 255, 255, 1)", // Branco totalmente opaco inicialmente
+  borderRadius: "10px",
+  transition: "background 0.3s", // Adiciona uma transição suave para a mudança de cor ao passar o mouse
 
-    '&:hover':{
-        background: "white",
-        borderRadius: "10px",
-    }
+  '&:hover': {
+    background: "rgba(255, 255, 255, 0.5)", // Branco parcialmente transparente ao passar o mouse
+  },
 });
 
+
 const StyledLink = styled.a({
-    color: "white", 
     textDecoration: "none",
     cursor: "pointer",
+    color: "black",
+    
     '&:hover': {
-        color: "black"
     }
 });
 
