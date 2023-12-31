@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ReactPlayer from 'react-player';
 
 
 
@@ -8,66 +9,63 @@ const Container = styled.div({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "100%",
-    width: "90%",
-    padding: "20px",
-    margin: "20px",
-})
+    height: "850px",
+    width: "100%",
+    background: "white"
+});
 
 const Titulo = styled.div({
     display: "flex",
     justifyContent: "center",
     fontSize: "35px",   
-    padding: "20px",
-    margin: "20px",
-})
+    color: "black",
+    padding: "10px",
+    margin: "10px",
+});
 
 const ContainerG = styled.div({
     display: "flex",
     fontSize: "35px",   
     height: "100%",
-    width: "50%",
-    padding: "20px",
-    margin: "20px",
-})
+    width: "99%",
+    color: "white",
+});
 
 const ContainerT = styled.div({
     display: "flex",
-    fontSize: "35px",   
+    fontSize: "20px",   
     height: "100%",
-    width: "50%",
-    padding: "20px",
-    margin: "20px",
-    justifyContent: 'flex-end', 
-})
+    width: "99%",
+    justifyContent: 'center', 
+    color: "black",
+});
 
 const ContainerV = styled.div({
     display: "flex",
-    justifyContent: 'flex-start', 
+    justifyContent: 'center', 
     height: "100%",
-    width: "50%",
-    background: "white",
-    padding: "20px",
-    margin: "20px",
-})
+    width: "99%",
+    padding: "10px",
+    margin: "10px",
+});
 
 const ContainerN = styled.div({
-
-})
+    color: "black"
+});
 
 
 export const Parte2 = () => {
     return(
         <Container> 
                 <Titulo> Quem somos</Titulo>
-
             <ContainerG>
                 <ContainerT>
-                <h1> aaaaaaaa</h1>
+                <h1> Nosso objetivo !</h1>
                 </ContainerT>
-                <ContainerV> 
-                <h1> aaaaaaaa</h1>
-            </ContainerV>
+                <ContainerV>
+                <ReactPlayer url='https://www.youtube.com/watch?v=LXb3EKWsInQ' />
+
+                </ContainerV>
             </ContainerG>
             <Titulo> Números </Titulo>
             <ContainerN> 
