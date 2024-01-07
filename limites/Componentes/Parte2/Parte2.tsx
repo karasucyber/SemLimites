@@ -53,17 +53,29 @@ const ContainerN = styled.div({
     color: "black"
 });
 
+
 const Parte2: React.FC = () => {
-    const [counterNumber, setCounterNumber] = useState(0);
-  
-    useEffect(() => {
-      const updateCounter = setInterval(() => {
-        setCounterNumber((prevCounter) => prevCounter + 1);
-      }, 1);
-  
-      return () => clearInterval(updateCounter);
-    }, []);
-  
+  const [counterNumber, setCounterNumber] = useState(0);
+
+  useEffect(() => {
+    const updateCounter = setInterval(() => {
+      setCounterNumber((prevCounter) => {
+        const newCounter = prevCounter + 99;
+
+        if (newCounter >= 13000) {
+          clearInterval(updateCounter);
+          return 1300; 
+        }
+
+        return newCounter;
+      });
+    }, 1);
+
+    return () => clearInterval(updateCounter);
+  }, [])
+
+
+
     return (
       <Container>
         <Titulo>Quem somos</Titulo>
@@ -76,13 +88,33 @@ const Parte2: React.FC = () => {
           </ContainerV>
         </ContainerG>
         <Titulo>Você sabia que</Titulo>
-        <ContainerN>
-          <h1>
-            <span className="counter">{counterNumber}</span> De desempregados no
+        
+        <ContainerN> 
+        <h1>
+            <span >{counterNumber}</span>M De desempregados no
             Brasil
           </h1>
         </ContainerN>
-        {/* Outros ContainerN semelhantes */}
+        <ContainerN> 
+        <h1>
+            <span >{counterNumber}</span>% Dos brasileiros dominam o idioma inglês
+          </h1>
+        </ContainerN>
+        <ContainerN>
+          <h1>
+            <span >{counterNumber}</span>M De progamadores serão necessários no Brasil até 2025
+          </h1>
+        </ContainerN>
+        <ContainerN> 
+        <h1>
+            <span >{counterNumber}</span>% Dos desempregados estão em Comunidade periféricas
+          </h1>
+        </ContainerN>
+        <ContainerN> 
+        <h1>
+            <span >{counterNumber}</span>% Dos jovens entre 18 a 35 anos não estão no ensino superior
+          </h1>
+        </ContainerN>
       </Container>
     );
   };

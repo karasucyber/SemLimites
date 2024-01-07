@@ -6,9 +6,18 @@ import NavBar from "../NavBAr/Bar";
 const Container = styled.div`
   position: relative;
   width: 100%;
-  height: 100vh;
-  
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
+
 const VideoBackground = styled(ReactPlayer)`
   position: absolute;
   top: 0;
@@ -16,7 +25,6 @@ const VideoBackground = styled(ReactPlayer)`
   width: 100%;
   height: 100%;
   z-index: -1;
-
   video {
     object-fit: cover;
   }
@@ -25,54 +33,68 @@ const VideoBackground = styled(ReactPlayer)`
 const Content = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   color: white;
   text-align: center;
   position: relative;
   z-index: 1;
-  height: 100%; /* Adiciona esta propriedade para ocupar toda a altura do contêiner pai */
+  width: 80%;
+  height: 100%;
+  padding: 200px; 
+
 `;
 
 const ContainerT = styled.div`
-  font-size: 50px;
+  font-size: 35px;
   padding: 5px;
+
 `;
 
 const ContainerSubT = styled.div`
-  font-size: 40px;
+  font-size: 25px;
   padding: 5px;
+
+
 `;
 
 const ContainerB = styled.div`
   font-size: 35px;
-  padding: 5px;
+  padding: 5px
 `;
+
+const ContainerTransp = styled.div({
+  width: "100%",
+  height: "100%"
+})
 
 export const Parte1 = () => {
   return (
     <Container>
         <NavBar/>
 <VideoBackground
-  url="/Pessoa trabalhando em seu laptop.mp4"
+  url="/sem limites projeto (1).mp4"
   playing
   loop
   muted
   width="100%"
   height="100%"
-  background="white"
+  background=""
 />
-      <Content>
+  <ContainerTransp>
+  <Content>
         <ContainerT>
           <h1> Venha para sem limites </h1>
         </ContainerT>
         <ContainerSubT>
-          <h2> Frase de efeito</h2>
+          <h2> Sua jornada começa aqui, venha se tornar um desenvolvedor que se destaca no mercado, não seja só mais um, seja SEM LIMITES</h2>
         </ContainerSubT>
         <ContainerB>
           <a> Inscreva-se </a>
+          <a> Inscreva-se </a>
         </ContainerB>
       </Content>
+  </ContainerTransp>
     </Container>
   );
 };

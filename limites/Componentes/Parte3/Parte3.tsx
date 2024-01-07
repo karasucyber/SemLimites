@@ -11,6 +11,7 @@ const Container = styled.div({
     width: "800px",
     padding: "20px",
     margin: "20px",
+    color: "white"
 })
 
 const Titulo = styled.div({
@@ -24,12 +25,12 @@ const Titulo = styled.div({
 const ContainerIMG = styled.div({
     display: "flex",
     justifyContent: "center",
-    backgroundImage: `url('backgroun.jpg')`,
+    backgroundImage: `url('3.png')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
-    width: "800px",
-    height: "400px",
+    width: "1200px",
+    height: "600px",
 });
 
 export const Parte3 = () => {
@@ -37,7 +38,6 @@ export const Parte3 = () => {
      <Container> 
         <Titulo> Problemas que solucionamos</Titulo>
         <ContainerIMG> 
-            <Titulo> Foto artigo </Titulo>
         </ContainerIMG>
         <Titulo>
          <p>ESTRUTURA ESG 
