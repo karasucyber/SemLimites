@@ -3,11 +3,33 @@ import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
 import styled from 'styled-components';
+import ReactPlayer from "react-player";
 
 const Container = styled.div({
   width: "100%",
   height: "1000px"
 })
+
+
+const ContainerImagem = styled.div({
+  width:"100%",
+  height: "50%",
+  background: ""
+})
+
+
+const VideoBackground = styled(ReactPlayer)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 10%;
+  z-index: -1;
+  video {
+    object-fit: cover;
+  }
+`;
+
 
 interface ModelProps {
 }
@@ -51,7 +73,7 @@ function Model(props: ModelProps) {
             {/* Drei's HTML component can "hide behind" canvas geometry */}
             <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
               <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-                <h1> Venha para sem limites</h1>
+                <VideoBackground url="/sem limites projeto (1).mp4"/>
               </div>
             </Html>
           </mesh>

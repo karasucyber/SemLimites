@@ -17,11 +17,11 @@ const Container = styled.div({
 const Titulo = styled.div({
     display: "flex",
     justifyContent: "center",
-    fontSize: "35px",   
-    padding: "20px",
-    margin: "20px",
-})
-
+    fontSize: "50px",   
+    color: "#D5E528",
+    padding: "10px",
+    margin: "10px",
+});
 const ContainerIMG = styled.div({
     display: "flex",
     justifyContent: "center",
@@ -33,21 +33,36 @@ const ContainerIMG = styled.div({
     height: "600px",
 });
 
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 25px;
+`;
+
 export const Parte3 = () => {
     return(<> 
      <Container> 
         <Titulo> Problemas que solucionamos</Titulo>
         <ContainerIMG> 
         </ContainerIMG>
-        <Titulo>
-         <p>ESTRUTURA ESG 
-         RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO
-         CURSOS + MÃO NA MASSA COM - TEORIA
-         CURSOS DE CURTA DURAÇÃO (10 MESES)
-         INGLÊS COMO SEGUNDO IDIOMA
-         JOVENS PERIFÉRICOS
-         IMIGRANTES EM VULNERABILIDADE SOCIAL</p>
-     </Titulo>
+        <Titulo> Soluções </Titulo>
+        <Content>
+        <ul>
+            <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
+            <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
+            <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
+            <li>INGLÊS COMO SEGUNDO IDIOMA</li>
+            <li>JOVENS PERIFÉRICOS</li>
+            <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
+        </ul>
+     </Content>
      </Container>
      </>
      )
