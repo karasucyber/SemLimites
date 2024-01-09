@@ -8,28 +8,18 @@ import ReactPlayer from "react-player";
 const Container = styled.div({
   width: "100%",
   height: "1000px"
+
+  
 })
 
 
-const ContainerImagem = styled.div({
-  width:"100%",
-  height: "50%",
-  background: ""
-})
+const ImageContainer = styled.div`
 
-
-const VideoBackground = styled(ReactPlayer)`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10%;
-  height: 10%;
-  z-index: -1;
-  video {
-    object-fit: cover;
-  }
 `;
 
+const StyledImage = styled.img`
+ 
+`;
 
 interface ModelProps {
 }
@@ -66,14 +56,17 @@ function Model(props: ModelProps) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation-x={-0.425} position={[0, -0.04, 0.41]}>
-        <group position={[0, 2.96, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
+        <group position={[0, 3, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
-            {/* Drei's HTML component can "hide behind" canvas geometry */}
-            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.09]} transform occlude>
+            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, 0.01]} transform occlude>
               <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-                <VideoBackground url="/sem limites projeto (1).mp4"/>
+              <ImageContainer>
+      <StyledImage src="Design sem nome.png"  />
+    </ImageContainer>
+
+
               </div>
             </Html>
           </mesh>
@@ -97,7 +90,6 @@ export default function Parte4() {
       <Suspense fallback={null}>
         <group rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
           <Model />
-          
         </group>
         <Environment preset="city" />
       </Suspense>
