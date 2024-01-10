@@ -7,15 +7,18 @@ import { AiFillShopping } from "react-icons/ai";
 import { AiFillHome } from "react-icons/ai";
 import { PiStudentBold } from "react-icons/pi";
 
-
 const Container = styled.div({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "120vh",
+    height: "100%",
     width: "100%",
-    background: "black"
+    backgroundImage: `url('Parte1-1.jpeg')`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundRepeat: "no-repeat", 
+
 });
 
 const Titulo = styled.div({
@@ -133,8 +136,6 @@ const Parte2: React.FC = () => {
           </ContainerV>
         </ContainerG>
         <Titulo>Você sabia que</Titulo>
-      
-        
         <ContainerN> 
         <h1>
             <ContainerIcons><AiFillShopping /></ContainerIcons>
@@ -157,11 +158,11 @@ const Parte2: React.FC = () => {
         <ContainerN> 
         <h1>
         <ContainerIcons><AiFillHome /></ContainerIcons>
-            <span >{counterNumber}</span><Amarelo>%</Amarelo> Dos desempregados estão em <Amarelo>Comunidade periféricas</Amarelo>
+          <span >{counterNumber}</span><Amarelo>%</Amarelo> Dos desempregados estão em <Amarelo>Comunidade periféricas</Amarelo>
           </h1>
         </ContainerN>
         <ContainerN> 
-        <h1><ContainerIcons><PiStudentBold /></ContainerIcons>
+         <h1><ContainerIcons><PiStudentBold /></ContainerIcons>
             <span >{counterNumber}</span><Amarelo>%</Amarelo> Dos <Amarelo>jovens</Amarelo> entre 18 a 35 anos não estão no <Amarelo> ensino superior</Amarelo>
           </h1>
         </ContainerN>

@@ -8,10 +8,12 @@ const Container = styled.div({
     justifyContent: "center",
     alignItems: "center",
     height: "100%",
-    width: "800px",
-    padding: "20px",
-    margin: "20px",
-    color: "white"
+    width: "100%",
+    color: "white",
+    backgroundImage: `url('6.png')`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundRepeat: "no-repeat", 
 })
 
 const Titulo = styled.div({
@@ -22,6 +24,7 @@ const Titulo = styled.div({
     padding: "10px",
     margin: "10px",
 });
+
 const ContainerIMG = styled.div({
     display: "flex",
     justifyContent: "center",

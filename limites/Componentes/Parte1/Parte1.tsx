@@ -4,14 +4,14 @@ import ReactPlayer from "react-player";
 import NavBar from "../NavBAr/Bar";
 
 const Container = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
+  position: relative ;
+  width: 100% ;
+  height: 100vh ;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  padding: 10px ;
 
   @media (max-width: 768px) {
     /* Add empty styles or adjustments specific for smaller screens */
@@ -29,7 +29,6 @@ const VideoBackground = styled(ReactPlayer)`
   video {
     object-fit: cover;
   }
-
   @media (max-width: 768px) {
     /* Add empty styles or adjustments specific for smaller screens */
   }
