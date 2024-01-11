@@ -13,10 +13,14 @@ const Container = styled.div({
   backgroundPosition: "center", 
   backgroundRepeat: "no-repeat", 
   '@media (max-width: 758px)': {
-    alignItems: "center",
-    width: "100%",
-    height: "90%"
+
+    width: "1000px",
+    height: "1000px",
+
+
+    
   },
+  
 })
 
 
