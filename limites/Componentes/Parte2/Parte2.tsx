@@ -18,7 +18,6 @@ const Container = styled.div({
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
-
 });
 
 const Titulo = styled.div({

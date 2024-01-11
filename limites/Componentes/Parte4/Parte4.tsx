@@ -7,11 +7,12 @@ import ReactPlayer from "react-player";
 
 const Container = styled.div({
   width: "100%",
-  height: "100%",
-  backgroundImage: `url('Parte1-1.jpeg')`,
+  height: "1000px",
+  backgroundImage: `url('19.jpg')`,
   backgroundSize: "cover", 
   backgroundPosition: "center", 
   backgroundRepeat: "no-repeat", 
+  
 })
 
 

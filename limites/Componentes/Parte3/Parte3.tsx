@@ -22,7 +22,8 @@ const Titulo = styled.div({
     fontSize: "50px",   
     color: "#D5E528",
     padding: "10px",
-    margin: "10px",
+    margin: "100px",
+
 });
 
 const ContainerIMG = styled.div({
@@ -41,12 +42,13 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   color: white;
-  width: 100%;
+  width: 50%;
   height: 100%;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   border-radius: 50px;
   padding: 10px;
   font-size: 25px;
+  margin: 50px;
 `;
 
 export const Parte3 = () => {

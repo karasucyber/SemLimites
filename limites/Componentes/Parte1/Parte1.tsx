@@ -6,7 +6,7 @@ import NavBar from "../NavBAr/Bar";
 const Container = styled.div`
   position: relative ;
   width: 100% ;
-  height: 100vh ;
+  height: 100% ;
   display: flex ;
   flex-direction: column ;
   justify-content: center ;
@@ -14,7 +14,15 @@ const Container = styled.div`
   padding: 10px ;
 
   @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
+    width: 100% ;
+  height: 100% ;
+  display: flex ;
+  flex-direction: column ;
+  justify-content: center ;
+  align-items: center ;
+  padding: 10px 
+    
+
   }
 `;
 
@@ -30,7 +38,6 @@ const VideoBackground = styled(ReactPlayer)`
     object-fit: cover;
   }
   @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
   }
 `;
 
@@ -50,7 +57,13 @@ const Content = styled.div`
   margin: 150px;
 
   @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
+    width: 90%;
+    height: 20%;  
+    padding: 10px;
+    margin: 10px;  
+    justify-content: center;
+
+  
   }
 `;
 
@@ -60,8 +73,9 @@ const ContainerT = styled.div`
   color: #D5E528;
 
   @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
-  }
+    font-size: 25px;
+    padding: 5px;
+    color: #D5E528;  }
 `;
 
 const ContainerSubT = styled.div`
@@ -69,7 +83,8 @@ const ContainerSubT = styled.div`
   padding: 5px;
 
   @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
+    font-size: 15px;
+    padding: 5px;
   }
 `;
 
@@ -78,7 +93,6 @@ const ContainerB = styled.div`
   padding: 5px;
 
   @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
   }
 `;
 

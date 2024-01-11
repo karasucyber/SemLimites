@@ -9,6 +9,10 @@ const Container = styled.div({
     height: "100%",
     width: "90%",
     background: "white",
+    backgroundImage: `url('19.jpg')`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundRepeat: "no-repeat", 
 })
 
 const Footer = () => {

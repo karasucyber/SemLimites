@@ -66,7 +66,7 @@ const StyledLink = styled.a`
   color: black;
 
   &:hover {
-    // Add hover styles if necessary
+    
   }
 `;
 

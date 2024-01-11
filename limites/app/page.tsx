@@ -13,10 +13,13 @@ const Container = styled.body({
   alignItems: "center",
   width: "100%",
   height: "100%",
-  background: "black",
   padding: "0px",
   margin: "0px",
   border: "none",
+  backgroundImage: `url('19.jpg')`,
+  backgroundSize: "cover", 
+  backgroundPosition: "center", 
+  backgroundRepeat: "no-repeat", 
 });
 
 
