@@ -18,6 +18,10 @@ const Container = styled.div({
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
+    '@media (max-width: 758px)': {
+      height: "100%",
+      width: "100%",
+    },
 });
 
 const Titulo = styled.div({
@@ -27,6 +31,10 @@ const Titulo = styled.div({
     color: "#D5E528",
     padding: "10px",
     margin: "10px",
+    '@media (max-width: 758px)': {
+
+      
+    },
 });
 
 const ContainerG = styled.div({
@@ -35,6 +43,10 @@ const ContainerG = styled.div({
     height: "100%",
     width: "99%",
     color: "white",
+    '@media (max-width: 758px)': {
+
+      
+    },
 });
 
 const ContainerT = styled.div({
@@ -44,6 +56,10 @@ const ContainerT = styled.div({
     width: "99%",
     justifyContent: 'center', 
     color: "white",
+    '@media (max-width: 758px)': {
+
+      
+    },
 });
 
 const ContainerV = styled.div({
@@ -53,6 +69,13 @@ const ContainerV = styled.div({
     width: "99%",
     padding: "10px",
     margin: "10px",
+    '@media (max-width: 758px)': {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center",
+
+    },
 });
 
 const ContainerN = styled.div({
@@ -62,6 +85,14 @@ const ContainerN = styled.div({
     flexDirection: "column",
     alignItems: "flex-start",
     width: "55%",
+    '@media (max-width: 758px)': {
+      alignItems: "center",
+      width: "55%",
+
+
+
+      
+    },
   });
 
 const ContainerDireita = styled.div({
@@ -71,25 +102,45 @@ const ContainerDireita = styled.div({
   flexDirection: "column",
   alignItems: "flex-start",
   width: "55%",
+  '@media (max-width: 758px)': {
+
+      
+  },
   
 })
 
 const Amarelo = styled.a({
-  color: "#D5E528"
+  color: "#D5E528",
+  '@media (max-width: 758px)': {
+
+      
+  },
 })
 
 const ContainerIcons = styled.span({
   padding:"10px",
-  fontSize: "50px"
+  fontSize: "50px",
+  '@media (max-width: 758px)': {
+
+      
+  },
 })
 
 const Titulo1 = styled.h1({
- fontSize: "20px"
+ fontSize: "20px",
+ '@media (max-width: 758px)': {
+
+      
+ },
  
 })
 
 const Paragrafo = styled.p({
-  fontSize: "25px"
+  fontSize: "25px",
+  '@media (max-width: 758px)': {
+
+      
+  },
 })
 
 
