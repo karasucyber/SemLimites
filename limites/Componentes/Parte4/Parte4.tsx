@@ -14,8 +14,8 @@ const Container = styled.div({
   backgroundRepeat: "no-repeat", 
   '@media (max-width: 758px)': {
 
-    width: "800px",
-    height: "800px",
+    width: "700px",
+    height: "700px",
 
 
     
