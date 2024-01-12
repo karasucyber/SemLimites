@@ -58,12 +58,11 @@ const Content = styled.div`
 
   @media (max-width: 768px) {
     width: 90%;
-    height: 20%;  
+    height: 10%;  
     padding: 10px;
     margin: 10px;  
     justify-content: center;
 
-  
   }
 `;
 
@@ -75,7 +74,8 @@ const ContainerT = styled.div`
   @media (max-width: 768px) {
     font-size: 25px;
     padding: 5px;
-    color: #D5E528;  }
+    color: #D5E528; 
+   }
 `;
 
 const ContainerSubT = styled.div`

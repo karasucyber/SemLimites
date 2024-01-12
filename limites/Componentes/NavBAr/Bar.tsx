@@ -27,12 +27,10 @@ const Container = styled.div`
 
   &:hover {
     animation: ${borderAnimation} 1.5s infinite; /* Adiciona a animação no hover */
-    border-bottom-color: darkgray; /* Define a cor no hover se necessário */
-  }
-
+    border-bottom-color: darkgray;
   @media (max-width: 768px) {
     width: 100%;
-    height: 10%;
+    height: 5%;
     padding: 10px;
     margin: 50px;
     justify-content: center;
@@ -50,11 +48,9 @@ const ContainerBar = styled.div`
   border-radius: 10px;
   transition: background 0.3s; // Adiciona uma transição suave para a mudança de cor ao passar o mouse
   cursor: pointer;
-
   &:hover {
     background: rgba(255, 255, 255, 0.5); // Branco parcialmente transparente ao passar o mouse
   }
-
   @media (max-width: 768px) {
     width: 100%;
   }

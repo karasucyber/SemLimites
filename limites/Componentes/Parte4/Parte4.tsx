@@ -12,12 +12,10 @@ const Container = styled.div({
   backgroundSize: "cover", 
   backgroundPosition: "center", 
   backgroundRepeat: "no-repeat", 
+   
   '@media (max-width: 758px)': {
-
     width: "700px",
     height: "700px",
-
-
     
   },
   
