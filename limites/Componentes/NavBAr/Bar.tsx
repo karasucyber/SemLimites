@@ -19,7 +19,7 @@ const Container = styled.div`
   margin: 10px;
   top: 0px;
   width: 60%;
-  height: 4%;
+  height: 3%;
   justify-content: flex-end;
   background: rgba(217, 217, 217, 0.5); 
   border-radius: 50px;
@@ -30,7 +30,7 @@ const Container = styled.div`
     border-bottom-color: darkgray;
   @media (max-width: 768px) {
     width: 100%;
-    height: 5%;
+    height: 0%;
     padding: 10px;
     margin: 50px;
     justify-content: center;

@@ -6,12 +6,13 @@ import NavBar from "../NavBAr/Bar";
 const Container = styled.div`
   position: relative ;
   width: 100% ;
-  height: 100% ;
+  height: 1200px ;
   display: flex ;
   flex-direction: column ;
   justify-content: center ;
   align-items: center ;
-  padding: 10px ;
+   
+  
 
   @media (max-width: 768px) {
     width: 100% ;
@@ -20,7 +21,7 @@ const Container = styled.div`
   flex-direction: column ;
   justify-content: center ;
   align-items: center ;
-  padding: 10px 
+   
     
 
   }
@@ -50,16 +51,15 @@ const Content = styled.div`
   text-align: center;
   z-index: 1;
   width: 50%;
-  height: 60%;
+  height: 50%;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   border-radius: 50px;
-  padding: 10px;
-  margin: 150px;
+  margin: 250px;
 
   @media (max-width: 768px) {
     width: 90%;
     height: 10%;  
-    padding: 10px;
+    ;
     margin: 10px;  
     justify-content: center;
 

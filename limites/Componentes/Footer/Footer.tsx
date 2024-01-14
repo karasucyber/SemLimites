@@ -7,7 +7,6 @@ import { MdOutlineAttachEmail } from "react-icons/md";
 
 const Amarelo  = styled.a`
   color: #D5E528;
-
   @media (max-width: 768px) {
   }
 `;
@@ -24,6 +23,13 @@ const Container = styled.div({
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
+  '@media (max-width: 758px)': {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+
+  },
 });
 
 const ContainerRight = styled.div({
@@ -32,16 +38,30 @@ const ContainerRight = styled.div({
   justifyContent: "center",
   flexDirection: "column",
   alignItems: "flex-start",
-  width: "40%",
-  height: "55%",
-});
+  width: "100%",
+  height: "100%",    
+  '@media (max-width: 758px)': {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+
+  },});
 
 const ContainerLeft = styled.div({
  display:"flex",
  justifyContent:"space-between",
-width: "50%",
+width: "40%",
 height: "100%",
-padding: "10px"
+padding: "10px",
+'@media (max-width: 758px)': {
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+
+},
+
 });
 
 const ContainerLeft2 = styled.div({
@@ -49,8 +69,15 @@ display: "flex",
 justifyItems: "center",
 flexDirection: "column",
 justifyContent: "flex-end",
-width: "50%",
-height: "100%",
+width: "100%",
+height: "1000%",
+'@media (max-width: 758px)': {
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "center",
+
+},
 })
 
 

@@ -23,18 +23,34 @@ const Titulo = styled.div({
     color: "#D5E528",
     padding: "10px",
     margin: "100px",
+    '@media (max-width: 758px)': {
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+  
+      },
 
 });
 
 const ContainerIMG = styled.div({
     display: "flex",
     justifyContent: "center",
-    backgroundImage: `url('3.png')`,
+    backgroundImage: `url('img2.jpg')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
-    width: "1200px",
-    height: "600px",
+    width: "1400px",
+    height: "700px",
+    '@media (max-width: 758px)': {
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "650px",
+        height: "350px",
+  
+      },
 });
 
 const Content = styled.div`
@@ -47,8 +63,20 @@ const Content = styled.div`
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   border-radius: 50px;
   padding: 10px;
-  font-size: 25px;
+  font-size: 40px;
   margin: 50px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    font-size: 30px;
+    margin: 30px;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+    font-size: 20px;
+    margin: 20px;
+  }
 `;
 
 export const Parte3 = () => {
@@ -61,10 +89,15 @@ export const Parte3 = () => {
         <Content>
         <ul>
             <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
+            <br></br>
             <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
+            <br></br>
             <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
+            <br></br>
             <li>INGLÊS COMO SEGUNDO IDIOMA</li>
+            <br></br>
             <li>JOVENS PERIFÉRICOS</li>
+            <br></br>
             <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
         </ul>
      </Content>

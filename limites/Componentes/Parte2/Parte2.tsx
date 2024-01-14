@@ -30,20 +30,27 @@ const Titulo = styled.div({
     fontSize: "50px",   
     color: "#D5E528",
     padding: "10px",
-    margin: "10px",
     '@media (max-width: 758px)': {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
 
       
     },
 });
 
 const ContainerG = styled.div({
-    display: "flex",
-    fontSize: "35px",   
-    height: "100%",
-    width: "99%",
-    color: "white",
+  display: "flex",
+  flexDirection: "row", // Change to "row" for horizontal arrangement
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100%",
+  width: "99%",
+    padding:"10px",
     '@media (max-width: 758px)': {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
 
       
     },
@@ -56,7 +63,11 @@ const ContainerT = styled.div({
     width: "99%",
     justifyContent: 'center', 
     color: "white",
+    padding:"10px",
     '@media (max-width: 758px)': {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
 
       
     },
@@ -68,7 +79,6 @@ const ContainerV = styled.div({
     height: "100%",
     width: "99%",
     padding: "10px",
-    margin: "10px",
     '@media (max-width: 758px)': {
       display: "flex",
       justifyContent: "center",
@@ -85,6 +95,7 @@ const ContainerN = styled.div({
     flexDirection: "column",
     alignItems: "flex-start",
     width: "55%",
+    padding:"10px",
     '@media (max-width: 758px)': {
       alignItems: "center",
       width: "55%",
@@ -99,9 +110,11 @@ const ContainerDireita = styled.div({
   color: "white",
   display: "flex",
   justifyContent: "center",
-  flexDirection: "column",
+   flexDirection: "column",
   alignItems: "flex-start",
-  width: "55%",
+  height: "100%",
+    width: "60%",
+  padding:"10px",
   '@media (max-width: 758px)': {
 
       
@@ -128,6 +141,7 @@ const ContainerIcons = styled.span({
 
 const Titulo1 = styled.h1({
  fontSize: "20px",
+ padding:"10px",
  '@media (max-width: 758px)': {
 
       
@@ -139,7 +153,6 @@ const Paragrafo = styled.p({
   fontSize: "25px",
   '@media (max-width: 758px)': {
 
-      
   },
 })
 
