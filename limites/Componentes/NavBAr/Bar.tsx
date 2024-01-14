@@ -17,29 +17,27 @@ const Container = styled.div`
   display: flex;
   padding: 10px;
   margin: 10px;
-  top: 0px;
   width: 60%;
   height: 3%;
   justify-content: flex-end;
   background: rgba(217, 217, 217, 0.5); 
   border-radius: 50px;
-  transition: border-bottom 0.3s ease; /* Adiciona uma transição para a propriedade da borda inferior */
-
+  transition: border-bottom 0.3s ease;
   &:hover {
     animation: ${borderAnimation} 1.5s infinite; /* Adiciona a animação no hover */
-    border-bottom-color: darkgray;
+    border-bottom-color: darkgray;}
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;
     padding: 10px;
-    margin: 50px;
+    margin: 10px;
     justify-content: center;
   }
 `;
 
 const ContainerBar = styled.div`
   padding: 5px;
-  width: 10%;
+  width: 15%;
   height: 70%;
   display: flex;
   justify-content: center;
@@ -55,6 +53,8 @@ const ContainerBar = styled.div`
     width: 100%;
     height: 100%;
     padding: 10px;
+    font-size: 15px;
+
     
 
   }

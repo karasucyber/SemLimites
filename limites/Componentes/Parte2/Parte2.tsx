@@ -116,7 +116,7 @@ const ContainerDireita = styled.div({
     width: "60%",
   padding:"10px",
   '@media (max-width: 758px)': {
-
+    width: "100%",
       
   },
   
