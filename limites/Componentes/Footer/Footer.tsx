@@ -37,24 +37,26 @@ const ContainerRight = styled.div({
 });
 
 const ContainerLeft = styled.div({
-  color: "white",
-  display: "flex",
-  justifyContent: "center",
-  flexDirection: "column",
-  alignItems: "flex-end",
-  width: "40%", // Adjusted width to make sure it fits within the Container
-  height: "10%",
+ display:"flex",
+ justifyContent:"space-between",
+width: "50%",
+height: "100%",
+padding: "10px"
 });
 
 const ContainerLeft2 = styled.div({
 display: "flex",
-justifyContent: "center",
+justifyItems: "center",
 flexDirection: "column",
-alignItems: "center",
-width: "40%", 
-height: "10%",
+justifyContent: "flex-end",
+width: "50%",
+height: "100%",
+})
 
-    
+
+
+const StyledButton = styled.div({
+fontSize: "30px",
 })
 
 const Footer = () => {
@@ -66,7 +68,30 @@ const Footer = () => {
         <h1><Amarelo href=""><MdOutlineAttachEmail/></Amarelo > contato@semlimitesed.tech</h1>
       </ContainerRight>
       <ContainerLeft>
-<ContainerLeft2> ola</ContainerLeft2>
+      <ContainerLeft2> 
+        <Amarelo><h2>Alunos</h2></Amarelo>
+        <StyledButton> 
+        <h6>Bolsista</h6>
+        <h6>Cadastro </h6>
+        </StyledButton>
+      </ContainerLeft2>
+      <ContainerLeft2> 
+        <Amarelo><h2>Empresas</h2></Amarelo>
+      <StyledButton>
+      <StyledButton>
+      <h6>Cadastro </h6>
+        <h6>Parceiros</h6>
+      </StyledButton>
+      </StyledButton>
+      </ContainerLeft2>
+      <ContainerLeft2> 
+        <Amarelo><h2>Cursos</h2></Amarelo>
+      <StyledButton>
+      <h6>Front-end</h6>
+        <h6>Back-end</h6>
+        <h6>inglês</h6>
+      </StyledButton>
+      </ContainerLeft2>
       </ContainerLeft>
     </Container>
   );
