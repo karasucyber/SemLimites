@@ -30,7 +30,7 @@ const Container = styled.div`
     border-bottom-color: darkgray;
   @media (max-width: 768px) {
     width: 100%;
-    height: 0%;
+    height: 100%;
     padding: 10px;
     margin: 50px;
     justify-content: center;
@@ -53,6 +53,10 @@ const ContainerBar = styled.div`
   }
   @media (max-width: 768px) {
     width: 100%;
+    height: 100%;
+    padding: 10px;
+    
+
   }
 `;
 

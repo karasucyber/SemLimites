@@ -45,7 +45,7 @@ const ContainerG = styled.div({
   justifyContent: "center",
   alignItems: "center",
   height: "100%",
-  width: "99%",
+  width: "98%",
     padding:"10px",
     '@media (max-width: 758px)': {
       display: "flex",
@@ -195,8 +195,12 @@ const Parte2: React.FC = () => {
           </ContainerT>
           
           <ContainerV>
-            <ReactPlayer url="https://www.youtube.com/watch?v=LXb3EKWsInQ" />
-          </ContainerV>
+          <ReactPlayer
+        url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+        width="100%"
+        height="400px"
+
+      />          </ContainerV>
         </ContainerG>
         <Titulo>Você sabia que</Titulo>
         <ContainerN> 
