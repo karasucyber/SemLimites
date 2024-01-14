@@ -83,7 +83,7 @@ export const NavBar = () => {
         <StyledLink href="/Bolsista">Bolsistas</StyledLink>
       </ContainerBar>  
       <ContainerBar>
-        <StyledLink href="/Empresas">Para empresas</StyledLink>
+        <StyledLink href="/Empresas">Empresas</StyledLink>
       </ContainerBar>
     </Container>
   );

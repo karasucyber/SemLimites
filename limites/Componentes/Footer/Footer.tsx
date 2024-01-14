@@ -45,6 +45,8 @@ const ContainerRight = styled.div({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
+    fontSize: "12px"
+
 
   },});
 

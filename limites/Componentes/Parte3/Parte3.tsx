@@ -48,8 +48,8 @@ const ContainerIMG = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        width: "650px",
-        height: "350px",
+        width: "500px",
+        height: "400px",
   
       },
 });
