@@ -1,9 +1,9 @@
 'use client'
 import Footer from "@/Componentes/Footer/Footer";
 import NavBar from "@/Componentes/NavBAr/Bar";
-import Parte1 from "@/Componentes/Parte1/Parte1";
 import React from "react";
 import styled from "styled-components";
+import Parte1 from "@/app/Empresas/Componentes/Parte1";
 
 
 const Container = styled.body({
@@ -25,8 +25,9 @@ const Container = styled.body({
 export default function PageEmpresas(){
     return(<> 
     <Container>
-        <NavBar/>
-        <Parte1/>        
+      <NavBar/>
+      <Parte1></Parte1>
+      
        <Footer/>
     </Container>
     </>)
