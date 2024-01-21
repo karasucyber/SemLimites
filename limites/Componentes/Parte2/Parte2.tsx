@@ -34,15 +34,12 @@ const Titulo = styled.div({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-
-
   },
 });
 
 const ContainerG = styled.div({
   display: "flex",
-  flexDirection: "row", // Change to "row" for horizontal arrangement
-  justifyContent: "center",
+  flexDirection: "row", 
   alignItems: "center",
   height: "100%",
   width: "98%",
@@ -109,7 +106,6 @@ const ContainerDireita = styled.div({
   padding: "10px",
   '@media (max-width: 758px)': {
     width: "100%",
-
   },
 
 })
@@ -117,7 +113,6 @@ const ContainerDireita = styled.div({
 const Amarelo = styled.a({
   color: "#D5E528",
   '@media (max-width: 758px)': {
-
 
   },
 })
@@ -135,7 +130,6 @@ const Titulo1 = styled.h1({
   fontSize: "20px",
   padding: "10px",
   '@media (max-width: 758px)': {
-
 
   },
 
@@ -204,33 +198,37 @@ const Parte2 = () => {
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillShopping /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={9000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no
-          Brasil
+          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={9000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
         </h1>
       </ContainerN>
+
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillBook /></ContainerIcons>
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos brasileiros dominam o idioma <Amarelo>inglês</Amarelo>
         </h1>
       </ContainerN>
+
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillEdit /></ContainerIcons>
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>M</Amarelo> De<Amarelo>progamadores</Amarelo> serão necessários no Brasil até 2025
         </h1>
       </ContainerN>
+
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillHome /></ContainerIcons>
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos desempregados estão em <Amarelo>Comunidade periféricas</Amarelo>
         </h1>
       </ContainerN>
+
       <ContainerN>
         <h1><ContainerIcons><PiStudentBold /></ContainerIcons>
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos <Amarelo>jovens</Amarelo> entre 18 a 35 anos não estão no <Amarelo> ensino superior</Amarelo>
         </h1>
       </ContainerN>
+      
     </Container>
   );
 };
