@@ -3,6 +3,7 @@ import Footer from "@/Componentes/Footer/Footer";
 import NavBar from "@/Componentes/NavBAr/Bar";
 import React from "react";
 import styled from "styled-components";
+import Parte1 from "./Componetes/Parte1";
 
 const Container = styled.body({
     display: "flex",
@@ -19,12 +20,14 @@ const Container = styled.body({
     backgroundRepeat: "no-repeat", 
   });
 
+
+
 export default function PageCursos(){
     
     return(
         <Container> 
             <NavBar/>
-
+             <Parte1/>
             <Footer/>
         </Container>
     )}

@@ -88,19 +88,19 @@ export const Parte3 = () => {
         </ContainerIMG>
         <Titulo> Soluções </Titulo>
         <Content>
-        <ul>
-            <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
-            <br></br>
-            <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
-            <br></br>
-            <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
-            <br></br>
-            <li>INGLÊS COMO SEGUNDO IDIOMA</li>
-            <br></br>
-            <li>JOVENS PERIFÉRICOS</li>
-            <br></br>
-            <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
-        </ul>
+          <ul>
+              <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
+              <br></br>
+              <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
+              <br></br>
+              <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
+              <br></br>
+              <li>INGLÊS COMO SEGUNDO IDIOMA</li>
+              <br></br>
+              <li>JOVENS PERIFÉRICOS</li>
+              <br></br>
+              <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
+          </ul>
      </Content>
      </Container>
      </>
