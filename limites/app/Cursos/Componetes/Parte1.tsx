@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
 import Planos from "./carrousel/Carrousel";
-import Stacks from "./Stacks.tsx/Stacks";
 
 const Container = styled.div({
     display: "flex",
@@ -202,8 +201,7 @@ const Parte1 = () => {
           </ContainerV2>
       </Container1>
       <Titulo>Por que nossos cursos!</Titulo>
-<Container1>      <Planos/>
-</Container1>    
+  <Planos/>
 </Container>
   );
 };

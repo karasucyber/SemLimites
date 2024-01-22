@@ -6,30 +6,85 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import * as S from "./style";
+import "./styles.css";
+import styled from "styled-components";
+import { FaCheck  } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+
+
+
+const Container = styled.div({
+  height: "90%",
+  width: "60%",
+  background: "white",
+  borderRadius: "30px",
+  padding: "20px",
+  border: "5px solid #d5e528" // Adiciona borda de cor amarelo limão
+});
+
+const Container1 = styled.div({
+  height: "90%",
+  width: "60%",
+  background: "black",
+  borderRadius: "30px",
+  color: "white ",
+  padding: "20px",
+  border: "5px solid white" // Adiciona borda de cor amarelo limão
+
+
+})
+
+
+const Container2 = styled.div({
+  display: "flex",
+  justifyItems: "center",
+  justifyContent: "center",
+  width: "100%",
+  padding: "10px"
+})
+
+
+const Container3 = styled.div({
+  width: "100%",
+  height: "100%",
+  padding: "10px"
+})
+
+const Container4 = styled.div({
+padding: "10px",
+fontSize: "20px",
+})
+
+const Container5 = styled.div({
+  padding: "10px",
+
+
+})
+const Container6 = styled.div({
+  padding: "10px"
+
+
+})
+
+const Button = styled.button({
+  padding: "10px"
+
+
+})
 
 export const Planos = () => {
-  const planosData = [
-    { imgSrc: "Inserir um título.png", href: "https://api.whatsapp.com/send/?phone=5511989188558&text=Ol%C3%A1&type=phone_number&app_absent=0" },
-    { imgSrc: "Inserir um título.png", href: "https://api.whatsapp.com/send/?phone=5511989188558&text=Ol%C3%A1&type=phone_number&app_absent=0" },
-    { imgSrc: "Inserir um título.png", href: "https://api.whatsapp.com/send/?phone=5511989188558&text=Ol%C3%A1&type=phone_number&app_absent=0" },
-    { imgSrc: "Inserir um título.png", href: "https://api.whatsapp.com/send/?phone=5511989188558&text=Ol%C3%A1&type=phone_number&app_absent=0" },
-
-  ];
-
   return (
     <>
       <S.Container>
         <S.Titulo>Planos</S.Titulo>
         <div
           style={{
-            display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            maxWidth: '650px', // Defina a largura máxima
-            maxHeight: '600px' // Defina a altura máxima
-          }}
-        >
+            width: "100%",
+            height: "100%"
+          }}>
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -45,24 +100,109 @@ export const Planos = () => {
             }}
             pagination={true}
             modules={[EffectCoverflow, Navigation]}
-            className="swiper1"
-          >
-            {planosData.map((plano, index) => (
-              <SwiperSlide key={index}>
-                <a href={plano.href} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={plano.imgSrc}
-                    style={{
-                      width: '35rem',
-                      height: '48rem',
-                      borderRadius: '1rem',
-                      objectFit: 'contain',
-                    }}
-                    alt={`Plano ${index + 1}`}
-                  />
-                </a>
-              </SwiperSlide>
-            ))}
+            className="swiper">
+            <SwiperSlide >
+              <Container1>
+                <Container2>
+                  <h1> Inglês</h1>
+                </Container2>
+                <h2> Descrição</h2>
+         <Container4> 
+         <ul> 
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Platorma 24 Horas
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Aulas ao vivo
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/>Professores Estrangeiros
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Aulas Descomplico 
+                    </li>
+                  </ul>
+         </Container4>
+                  <h1> Preço: </h1>
+                  <Container5>
+                  <h1>R$:54,90</h1>
+                  </Container5>
+                  <Container6> 
+                  <p> recorrente</p>
+                  </Container6>
+               <Button> <FaWhatsapp /> </Button>
+              </Container1>
+            </SwiperSlide>
+            <SwiperSlide >
+              <Container>
+                <Container2>
+                  <h1> Front-end</h1>
+                </Container2>
+                  <Container3> 
+                  <h2> Descrição</h2>
+               <Container4>
+               <ul> 
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Node,Python, Kotlin & c#
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Projetos
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Plataforma 24 Horas
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Aprendizado facilitado
+                    </li>
+                  </ul>
+               </Container4>
+                  <h1> Preço: </h1>
+                  <Container5>
+                  <h1>R$:70,00</h1>
+                  </Container5>
+                  <Container6> 
+                  <p> recorrente</p>
+
+                  </Container6>
+
+                  <Button> <FaWhatsapp /> </Button>
+                </Container3>
+              </Container>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Container>
+                <Container2>
+                  <h1> Back-end</h1>
+                </Container2>
+                <Container3> 
+                  <h2> Descrição</h2>
+             <Container4>
+             <ul> 
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> React, angular, vue
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/>Projetos
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Plataforma 24 Horas
+                    </li>
+                    <li> 
+                    <FaCheck style={{color: 'green'}}/> Aprendizado facilitado
+                    </li>
+                  </ul>
+             </Container4>
+                  <h1> Preço: </h1>
+               <Container5>
+               <h1>R$:70,00</h1>
+               </Container5>
+                 <Container6>
+                 <p> recorrente</p>
+                 </Container6>
+                  <Button> <FaWhatsapp /> </Button>
+                </Container3>
+              </Container>
+            </SwiperSlide>
           </Swiper>
         </div>
       </S.Container>
