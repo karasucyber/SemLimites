@@ -10,7 +10,22 @@ import "./styles.css";
 import styled from "styled-components";
 import { FaCheck  } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
-
+const ContainerG = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100%",
+  width: "100%",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  '@media (max-width: 758px)': {
+    height: "100%",
+    width: "100%",
+    alignItems: "center"
+  },
+})
 
 
 
@@ -110,14 +125,20 @@ const Button2 = styled.button({
 
 export const Planos = () => {
   return (
-    <>
+    <ContainerG>
     
         <S.Titulo>Planos</S.Titulo>
         <div
           style={{
             
-            width: "100%",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
             height: "100%",
+            width: "100%",
+            
+ 
           }}>
           <Swiper
             effect={'coverflow'}
@@ -245,7 +266,7 @@ export const Planos = () => {
           </Swiper>
         </div>
       
-    </>
+  </ContainerG>
   );
 }
 
