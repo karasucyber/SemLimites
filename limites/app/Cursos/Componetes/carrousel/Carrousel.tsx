@@ -30,7 +30,19 @@ const Container1 = styled.div({
   color: "white ",
   padding: "20px",
   border: "5px solid white" // Adiciona borda de cor amarelo limão
+}) 
 
+const Line = styled.div({
+  width:"100%",
+  height: "1%",
+  background: "black"
+
+})
+
+const Line2 = styled.div({
+  width:"100%",
+  height: "1%",
+  background: "white"
 
 })
 
@@ -47,27 +59,52 @@ const Container2 = styled.div({
 const Container3 = styled.div({
   width: "100%",
   height: "100%",
-  padding: "10px"
+  padding: "10px",
+
 })
 
 const Container4 = styled.div({
 padding: "10px",
 fontSize: "20px",
+margin: "30px",
+width: "100%",
+
+
 })
 
 const Container5 = styled.div({
   padding: "10px",
+  display: "flex",
+  justifyContent: "center",
+  fontSize: "30px",
+  width: "100%",
+
 
 
 })
 const Container6 = styled.div({
-  padding: "10px"
+  padding: "10px",
+  display: "flex",
+  justifyContent: "flex-end"
+  
+})
+
+const Button = styled.button({
+  padding: "10px",
+  width: "100%",
+  borderRadius: "10px",
+  background: "black",
+  color: "white"
 
 
 })
 
-const Button = styled.button({
-  padding: "10px"
+const Button2 = styled.button({
+  padding: "10px",
+  width: "100%",
+  borderRadius: "10px",
+  background: "#d5e528",
+  color: "black",
 
 
 })
@@ -107,7 +144,8 @@ export const Planos = () => {
                   <h1> Inglês</h1>
                 </Container2>
                 <h2> Descrição</h2>
-         <Container4> 
+                <Line2/>         
+                  <Container4> 
          <ul> 
                     <li> 
                     <FaCheck style={{color: 'green'}}/> Platorma 24 Horas
@@ -130,7 +168,7 @@ export const Planos = () => {
                   <Container6> 
                   <p> recorrente</p>
                   </Container6>
-               <Button> <FaWhatsapp /> </Button>
+               <Button2> <FaWhatsapp /> </Button2>
               </Container1>
             </SwiperSlide>
             <SwiperSlide >
@@ -140,6 +178,8 @@ export const Planos = () => {
                 </Container2>
                   <Container3> 
                   <h2> Descrição</h2>
+                  <Line></Line>
+
                <Container4>
                <ul> 
                     <li> 
@@ -176,6 +216,8 @@ export const Planos = () => {
                 </Container2>
                 <Container3> 
                   <h2> Descrição</h2>
+                  <Line/>
+
              <Container4>
              <ul> 
                     <li> 
