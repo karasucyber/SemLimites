@@ -1,3 +1,4 @@
+/* Default styles for scrollbar */
 ::-webkit-scrollbar {
   width: 1.3rem;
 }
@@ -16,14 +17,17 @@
   background: #f9f9f9;
 }
 
+/* Styles for Swiper slide */
 .swiper-slide {
-  width: 37rem;
-  height: 42rem;
+  width: 25rem;
+  height: 40rem;
+  padding: 2rem;
 }
 
-
-
-.swiper-slide-shadow-left,
-.swiper-slide-shadow-right {
-  display: none;
+/* Styles for hiding slide shadows on smaller screens */
+@media (max-width: 768px) {
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    display: none;
+  }
 }
