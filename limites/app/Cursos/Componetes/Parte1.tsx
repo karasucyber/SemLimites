@@ -169,6 +169,29 @@ height: 100%;
 width: 100%;
 
   `;
+  const NO = styled.div({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100%",
+    width: "100%",
+    backgroundImage: `url('sem limites projeto.png')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    '@media (max-width: 758px)': {
+      height: "50%",
+      width: "50%",
+    },
+  });
+  const Amarelo = styled.a`
+  color: #D5E528;
+
+  @media (max-width: 768px) {
+    /* Add empty styles or adjustments specific for smaller screens */
+  }
+`;
 const Parte1 = () => {
   return (
     <Container>
@@ -177,32 +200,27 @@ const Parte1 = () => {
         <Container2> 
           <Content> 
           <ul>
-            <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
+            <li><Amarelo>Missçao inspiradora </Amarelo>, Transformar vidas oferecendo educação de qualidade e desenvolvimento tecnológico a crianças de comunidades carentes.</li>
             <br></br>
-            <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
+            <li><Amarelo> FOCO EM TECNOLOGIA</Amarelo> Programas inovadores ensinam programação e robótica, preparando os alunos para o mundo moderno.
+</li>
             <br></br>
-            <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
+            <li><Amarelo>INCLUSÃO SOCIAL:</Amarelo> Compromisso com a inclusão, proporcionando oportunidades iguais e parcerias para estágios e mentorias.</li>
             <br></br>
-            <li>INGLÊS COMO SEGUNDO IDIOMA</li>
+            <li><Amarelo>EQUIPE ATIVA: </Amarelo>  Educadores qualificados e apaixonados orientam os alunos em seu crescimento acadêmico e pessoal.</li>
             <br></br>
-            <li>JOVENS PERIFÉRICOS</li>
+            <li><Amarelo>RESULTADOS 100% COMPROVADOS:  </Amarelo> Celebramos conquistas acadêmicas, avanços tecnológicos e contribuições à comunidade.</li>
             <br></br>
-            <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
         </ul>
           </Content>
         </Container2>
      
-        <ContainerV2>
-            <ReactPlayer
-              url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-              width="100%"
-              height="500px"
-            />
-          </ContainerV2>
+   
       </Container1>
       <Titulo>Por que nossos cursos!</Titulo>
-  <Planos/>
-</Container>
+<NO> 
+<Planos/>
+</NO></Container>
   );
 };
 

@@ -7,8 +7,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-height: 100%;
-width: 100%;
+
 padding: 20px;
 @media only screen and (max-width: 768px){
     align-items: initial;

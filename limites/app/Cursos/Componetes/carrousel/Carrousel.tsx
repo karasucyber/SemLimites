@@ -13,12 +13,13 @@ import { FaWhatsapp } from "react-icons/fa";
 
 
 
+
 const Container = styled.div({
   height: "90%",
   width: "60%",
   background: "white",
   borderRadius: "30px",
-  padding: "20px",
+  
   border: "5px solid #d5e528" // Adiciona borda de cor amarelo limão
 });
 
@@ -28,7 +29,7 @@ const Container1 = styled.div({
   background: "black",
   borderRadius: "30px",
   color: "white ",
-  padding: "20px",
+  
   border: "5px solid white" // Adiciona borda de cor amarelo limão
 }) 
 
@@ -52,28 +53,26 @@ const Container2 = styled.div({
   justifyItems: "center",
   justifyContent: "center",
   width: "100%",
-  padding: "10px"
-})
+  })
 
 
 const Container3 = styled.div({
   width: "100%",
   height: "100%",
-  padding: "10px",
+  
 
 })
 
 const Container4 = styled.div({
-padding: "10px",
+
 fontSize: "20px",
-margin: "30px",
 width: "100%",
 
 
 })
 
 const Container5 = styled.div({
-  padding: "10px",
+  
   display: "flex",
   justifyContent: "center",
   fontSize: "30px",
@@ -83,14 +82,14 @@ const Container5 = styled.div({
 
 })
 const Container6 = styled.div({
-  padding: "10px",
+  
   display: "flex",
   justifyContent: "flex-end"
   
 })
 
 const Button = styled.button({
-  padding: "10px",
+  
   width: "100%",
   borderRadius: "10px",
   background: "black",
@@ -100,7 +99,7 @@ const Button = styled.button({
 })
 
 const Button2 = styled.button({
-  padding: "10px",
+  
   width: "100%",
   borderRadius: "10px",
   background: "#d5e528",
@@ -112,15 +111,13 @@ const Button2 = styled.button({
 export const Planos = () => {
   return (
     <>
-      <S.Container>
+    
         <S.Titulo>Planos</S.Titulo>
         <div
           style={{
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
+            
             width: "100%",
-            height: "100%"
+            height: "100%",
           }}>
           <Swiper
             effect={'coverflow'}
@@ -130,9 +127,9 @@ export const Planos = () => {
             loop={true}
             coverflowEffect={{
               rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 10,
+              stretch: 15,
+              depth: 60,
+              modifier: 15,
               slideShadows: true,
             }}
             pagination={true}
@@ -247,7 +244,7 @@ export const Planos = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-      </S.Container>
+      
     </>
   );
 }
