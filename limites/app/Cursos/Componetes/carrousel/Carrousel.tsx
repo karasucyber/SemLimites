@@ -21,15 +21,13 @@ const ContainerG = styled.div({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
-    height: "1000px",
-    width: "1000px",
+    height: "100%",
     alignItems: "center"
   },
 })
 
 const Container = styled.div({
   height: "100%",
-  width: "100%",
   background: "white",
   borderRadius: "30px",
   border: "5px solid #d5e528" // Adiciona borda de cor amarelo limão
@@ -37,7 +35,6 @@ const Container = styled.div({
 
 const Container1 = styled.div({
   height: "100%",
-  width: "100%",
   background: "black",
   borderRadius: "30px",
   color: "white ",
@@ -124,12 +121,7 @@ export const Planos = () => {
       <S.Titulo>Planos</S.Titulo>
       <div
         style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100%",
-          width: "100%",
+        
         }}>
         <Swiper
           effect={'coverflow'}

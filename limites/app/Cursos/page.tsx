@@ -4,6 +4,7 @@ import NavBar from "@/Componentes/NavBAr/Bar";
 import React from "react";
 import styled from "styled-components";
 import Parte1 from "./Componetes/Parte1";
+import Planos from "./Componetes/carrousel/Carrousel";
 
 const Container = styled.body({
     display: "flex",
@@ -28,6 +29,8 @@ export default function PageCursos(){
         <Container> 
             <NavBar/>
              <Parte1/>
+             <Planos></Planos>
+
             <Footer/>
         </Container>
     )}

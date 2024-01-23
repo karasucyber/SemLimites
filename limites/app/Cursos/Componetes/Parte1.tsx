@@ -218,9 +218,7 @@ const Parte1 = () => {
    
       </Container1>
       <Titulo>Por que nossos cursos!</Titulo>
-<NO> 
-<Planos/>
-</NO></Container>
+</Container>
   );
 };
 
