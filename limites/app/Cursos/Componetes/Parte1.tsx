@@ -1,102 +1,102 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
 import Planos from "./carrousel/Carrousel";
 
 const Container = styled.div({
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100%",
+  width: "100%",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  '@media (max-width: 758px)': {
     height: "100%",
     width: "100%",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    '@media (max-width: 758px)': {
-      height: "100%",
-      width: "100%",
-      alignItems: "center"
-    },
+    flexDirection: "column",
+  },
 })
 
 const Titulo = styled.div({
-    display: "flex",
-    justifyContent: "center",
-    fontSize: "50px",
-    color: "#D5E528",
-    padding: "10px",
-    '@media (max-width: 758px)': {
-      display: "flex",
-      justifyContent: "center",
-      flexDirection: "column",
-    },
-  });
-
-  const Container1 = styled.div({
-   height: '100%',
-   width: "80%",
-   display: "flex",
-   alignItems: "center",
-   justifyContent: "center",    
-  })
-
-  const Container2 = styled.div({
-    color: "white",
+  display: "flex",
+  justifyContent: "center",
+  fontSize: "50px",
+  color: "#D5E528",
+  padding: "10px",
+  '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    alignItems: "flex-start",
-    width: "100%",
-    padding: "10px",
-  })
+  },
+});
 
-  const Container3 = styled.div({
-    color: "white",
+const Container1 = styled.div({
+  height: '100%',
+  width: "80%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+})
+
+const Container2 = styled.div({
+  color: "white",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  width: "100%",
+  padding: "10px",
+})
+
+const Container3 = styled.div({
+  color: "white",
+  display: "flex",
+  justifyContent: "center",
+  flexDirection: "column",
+  alignItems: "flex-end",
+  width: "100%",
+  padding: "10px",
+})
+
+const ContainerV = styled.div({
+  display: "flex",
+  justifyContent: 'center',
+  height: "100%",
+  width: "1000px",
+  padding: "10px",
+  position: "relative",
+  '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    alignItems: "flex-end",
-    width: "100%",
-    padding: "10px",
-  })
+    alignItems: "center",
 
-  const ContainerV = styled.div({
+  },
+});
+
+
+
+const ContainerV2 = styled.div({
+  display: "flex",
+  justifyContent: 'center',
+  height: "100%",
+  width: "100%",
+  padding: "10px",
+  '@media (max-width: 758px)': {
     display: "flex",
-    justifyContent: 'center',
-    height: "100%",
-    width: "1000px",
-    padding: "10px",
-    position: "relative",
-    '@media (max-width: 758px)': {
-      display: "flex",
-      justifyContent: "center",
-      flexDirection: "column",
-      alignItems: "center",
-  
-    },
-  });
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+
+  },
+});
 
 
 
-  const ContainerV2 = styled.div({
-    display: "flex",
-    justifyContent: 'center',
-    height: "100%",
-    width: "100%",
-    padding: "10px",
-    '@media (max-width: 758px)': {
-      display: "flex",
-      justifyContent: "center",
-      flexDirection: "column",
-      alignItems: "center",
-  
-    },
-  });
-
-
-  
-  const ContainerTrianguloDireita = styled.div`
+const ContainerTrianguloDireita = styled.div`
     width: 100%;
     height: 100%;
     padding: 50px;
@@ -129,8 +129,8 @@ const Titulo = styled.div({
       z-index: 1;
     }
   `;
-  
-  const Content = styled.div`
+
+const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -142,19 +142,17 @@ const Titulo = styled.div({
   padding: 10px;
   font-size: 35px;
   margin: 50px;
-
   @media (max-width: 768px) {
     width: 80%;
     font-size: 30px;
     margin: 30px;
   }
-
   @media (max-width: 480px) {
     width: 90%;
     font-size: 20px;
     margin: 20px;
   }
-`;  
+`;
 
 
 export const ContainerMain = styled.div`
@@ -166,59 +164,152 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 height: 100%;
-width: 100%;
+width: 100%; `;
 
-  `;
-  const NO = styled.div({
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    width: "100%",
-    backgroundImage: `url('sem limites projeto.png')`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    '@media (max-width: 758px)': {
-      height: "50%",
-      width: "50%",
-    },
-  });
-  const Amarelo = styled.a`
+
+const Amarelo = styled.a`
   color: #D5E528;
+  @media (max-width: 768px){
 
-  @media (max-width: 768px) {
-    /* Add empty styles or adjustments specific for smaller screens */
   }
 `;
+
+
+const CardContainer = styled.div`
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+`;
+
+const Card = styled.div<{ isFlipped: boolean }>`
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  transform: ${(props) => (props.isFlipped ? 'rotateY(180deg)' : 'rotateY(0)')};
+`;
+
+const CardFace = styled.div`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const FrontFace = styled(CardFace)`
+  background-color: #333;
+`;
+
+const BackFace = styled(CardFace)`
+  background-color: #555;
+  transform: rotateY(180deg);
+`;
+
+const CardImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+`;
+
+const CardDescription = styled.p`
+  color: white;
+  text-align: center;
+`;
+
+interface CardFlipProps {
+  imageSrc: string;
+  description: string;
+}
+
+const CardFlip: React.FC<CardFlipProps> = ({ imageSrc, description }) => {
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setIsFlipped(!isFlipped);
+  };
+
+  return (
+    <CardContainer>
+      <Card isFlipped={isFlipped} onClick={handleFlip}>
+        <FrontFace>
+          <CardImage src={imageSrc} alt="Card Image" />
+        </FrontFace>
+        <BackFace>
+          <CardDescription>{description}</CardDescription>
+        </BackFace>
+      </Card>
+    </CardContainer>
+  );
+};
+
+const FlexContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;  // Espaçamento entre os itens
+  padding: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;  // Empilhar os itens em telas menores que 768px
+  }
+`;
+
+const Titulo2 = styled.div({
+  display: "flex",
+  justifyContent: "center",
+  fontSize: "40px",
+  color: "#D5E528",
+  padding: "10px",
+  '@media (max-width: 758px)': {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
+});
+
 const Parte1 = () => {
   return (
     <Container>
       <Titulo>Por que nossos cursos!</Titulo>
       <Container1>
-        <Container2> 
-          <Content> 
-          <ul>
-            <li><Amarelo>Missçao inspiradora </Amarelo>, Transformar vidas oferecendo educação de qualidade e desenvolvimento tecnológico a crianças de comunidades carentes.</li>
-            <br></br>
-            <li><Amarelo> FOCO EM TECNOLOGIA</Amarelo> Programas inovadores ensinam programação e robótica, preparando os alunos para o mundo moderno.
-</li>
-            <br></br>
-            <li><Amarelo>INCLUSÃO SOCIAL:</Amarelo> Compromisso com a inclusão, proporcionando oportunidades iguais e parcerias para estágios e mentorias.</li>
-            <br></br>
-            <li><Amarelo>EQUIPE ATIVA: </Amarelo>  Educadores qualificados e apaixonados orientam os alunos em seu crescimento acadêmico e pessoal.</li>
-            <br></br>
-            <li><Amarelo>RESULTADOS 100% COMPROVADOS:  </Amarelo> Celebramos conquistas acadêmicas, avanços tecnológicos e contribuições à comunidade.</li>
-            <br></br>
-        </ul>
+        <Container2>
+          <Content>
+            <ul>
+              <li><Amarelo>Missçao inspiradora </Amarelo>, Transformar vidas oferecendo educação de qualidade e desenvolvimento tecnológico a crianças de comunidades carentes.</li>
+              <br></br>
+              <li><Amarelo> FOCO EM TECNOLOGIA</Amarelo> Programas inovadores ensinam programação e robótica, preparando os alunos para o mundo moderno.</li>
+              <br></br>
+              <li><Amarelo>INCLUSÃO SOCIAL:</Amarelo> Compromisso com a inclusão, proporcionando oportunidades iguais e parcerias para estágios e mentorias.</li>
+              <br></br>
+              <li><Amarelo>EQUIPE ATIVA: </Amarelo>  Educadores qualificados e apaixonados orientam os alunos em seu crescimento acadêmico e pessoal.</li>
+              <br></br>
+              <li><Amarelo>RESULTADOS 100% COMPROVADOS:  </Amarelo> Celebramos conquistas acadêmicas, avanços tecnológicos e contribuições à comunidade.</li>
+              <br></br>
+            </ul>
           </Content>
         </Container2>
-     
-   
+       
       </Container1>
       <Titulo>Por que nossos cursos!</Titulo>
-</Container>
+      <Titulo2>Front-end </Titulo2>
+      <FlexContainer>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+      </FlexContainer>
+      <Titulo2>Back-end </Titulo2>
+      <FlexContainer>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+      </FlexContainer>
+      <Titulo2>Inglês</Titulo2>
+      <FlexContainer>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+      </FlexContainer>
+    </Container>
   );
 };
 
