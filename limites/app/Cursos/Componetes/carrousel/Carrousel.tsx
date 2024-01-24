@@ -132,7 +132,7 @@ export const Planos = () => {
           coverflowEffect={{
             rotate: 0,
             stretch: 15,
-            depth: 60,
+            depth: 10,
             modifier: 15,
             slideShadows: true,
           }}

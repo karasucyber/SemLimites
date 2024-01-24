@@ -27,7 +27,7 @@ const Container = styled.div({
 const Titulo = styled.div({
   display: "flex",
   justifyContent: "center",
-  fontSize: "50px",
+  fontSize: "60px",
   color: "#D5E528",
   padding: "10px",
   '@media (max-width: 758px)': {
@@ -88,6 +88,7 @@ const ContainerN = styled.div({
   flexDirection: "column",
   alignItems: "flex-start",
   width: "55%",
+  height: "100%",
   padding: "10px",
   '@media (max-width: 758px)': {
     alignItems: "center",
@@ -136,12 +137,41 @@ const Titulo1 = styled.h1({
 })
 
 const Paragrafo = styled.p({
-  fontSize: "25px",
+  fontSize: "30px",
   '@media (max-width: 758px)': {
 
   },
 })
 
+
+const ContainerNumber  = styled.div({
+  display: "flex",
+  alignItems: "center",
+  justifyItems: "center",
+  justifyContent: "center",
+  fontSize: "20px",
+  height: "1000px",
+  width: "100%",
+  color: "white",
+  flexDirection: "column",
+  padding : "100px",
+  margin: "50px",
+
+
+  '@media (max-width: 758px)': {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
+});
+
+const Line2 = styled.div({
+  display: "block",
+  margin: "auto",
+  width: "80%",
+  height: "1px",
+  background: "white"
+});
 
 
 const CustomCounter: React.FC<{ initialValue: number, incrementValue: number, maxLimit: number }> = ({ initialValue, incrementValue, maxLimit }) => {
@@ -194,8 +224,10 @@ const Parte2 = () => {
             height="400px"/>          
           </ContainerV>
       </ContainerG>
+      <ContainerNumber> 
+      <Line2></Line2>
       <Titulo>Você sabia que</Titulo>
-      <ContainerN>
+             <ContainerN>
         <h1>
           <ContainerIcons><AiFillShopping /></ContainerIcons>
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={9000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
@@ -205,7 +237,7 @@ const Parte2 = () => {
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillBook /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos brasileiros dominam o idioma <Amarelo>inglês</Amarelo>
+          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={55000} /></span><Amarelo>%</Amarelo> Dos brasileiros dominam o idioma <Amarelo>inglês</Amarelo>
         </h1>
       </ContainerN>
 
@@ -228,6 +260,9 @@ const Parte2 = () => {
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos <Amarelo>jovens</Amarelo> entre 18 a 35 anos não estão no <Amarelo> ensino superior</Amarelo>
         </h1>
       </ContainerN>
+      </ContainerNumber>
+      <Line2></Line2>
+ 
       
     </Container>
   );

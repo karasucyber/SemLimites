@@ -90,10 +90,18 @@ function Model(props: ModelProps) {
     </group>
   );
 }
+const Line2 = styled.div({
+  display: "block",
+  margin: "auto",
+  width: "80%",
+  height: "1px",
+  background: "white"
+});
 
 export default function Parte4() {
   return (
- <Container>
+<> 
+<Container>
       <Canvas camera={{ position: [-5, 0, -15], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <Suspense fallback={null}>
@@ -107,5 +115,8 @@ export default function Parte4() {
       
     </Canvas>
  </Container>
+ 
+ <Line2>
+  </Line2></>
   );
 }

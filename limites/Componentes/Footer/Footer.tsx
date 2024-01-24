@@ -13,9 +13,7 @@ const Amarelo = styled.a`
 
 const Container = styled.div({
   display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center",
+
   height: "100%",
   width: "99%",
   background: "white",

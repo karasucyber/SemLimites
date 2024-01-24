@@ -293,7 +293,7 @@ const Parte1 = () => {
       <Titulo>Por que nossos cursos!</Titulo>
       <Titulo2>Front-end </Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="7.png" description="Descrição do card"/>
         <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
         <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
       </FlexContainer>

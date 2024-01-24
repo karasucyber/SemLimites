@@ -80,12 +80,21 @@ const Content = styled.div`
   }
 `;
 
+const Line2 = styled.div({
+  display: "block",
+  margin: "auto",
+  width: "80%",
+  height: "1px",
+  background: "white"
+});
 export const Parte3 = () => {
     return(<> 
      <Container> 
         <Titulo> Problemas que solucionamos !!!</Titulo>
         <ContainerIMG> 
         </ContainerIMG>
+        <Line2></Line2>
+
         <Titulo> Soluções </Titulo>
         <Content>
           <ul>
@@ -103,6 +112,7 @@ export const Parte3 = () => {
           </ul>
      </Content>
      </Container>
+     <Line2></Line2>
      </>
      )
 }

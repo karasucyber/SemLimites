@@ -20,7 +20,7 @@ const Container = styled.div`
   width: 60%;
   height: 3%;
   justify-content: flex-end;
-  background: rgba(217, 217, 217, 0.5); 
+  background: rgba(217, 217, 217, 5); 
   border-radius: 50px;
   transition: border-bottom 0.3s ease;
   &:hover {
@@ -41,13 +41,13 @@ const ContainerBar = styled.div`
   height: 70%;
   display: flex;
   justify-content: center;
-  font-size: 17px;
-  color: white;
+  font-size: 20px;
+  color: rgba(217, 217, 300, 20);
   border-radius: 10px;
   transition: background 0.3s; // Adiciona uma transição suave para a mudança de cor ao passar o mouse
   cursor: pointer;
   &:hover {
-    background: rgba(255, 255, 255, 0.5); // Branco parcialmente transparente ao passar o mouse
+    background: rgba(255, 255, 120, 250); // Branco parcialmente transparente ao passar o mouse
   }
   @media (max-width: 768px) {
     width: 100%;
@@ -74,7 +74,7 @@ export const NavBar = () => {
   return (
     <Container>
       <ContainerBar>
-        <StyledLink href="">Inicio</StyledLink>
+        <StyledLink href="/">Inicio</StyledLink>
       </ContainerBar>
       <ContainerBar>
         <StyledLink href="/Cursos">Curso</StyledLink>

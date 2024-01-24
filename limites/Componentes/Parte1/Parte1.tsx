@@ -138,11 +138,16 @@ const Amarelo = styled.a`
   }
 `;
 
-export const Parte1 = () => {
-  return (
-    <Container>
-      <NavBar />
-      <VideoBackground
+const Line2 = styled.div({
+  display: "block",
+  margin: "auto",
+  width: "80%",
+  height: "1px",
+  background: "Black"
+});
+
+
+/*   <VideoBackground
         url="/sem limites projeto (1).mp4"
         playing
         loop
@@ -150,11 +155,17 @@ export const Parte1 = () => {
         width="100%"
         height="100%"
         background=""
-      />
+      />*/
+
+export const Parte1 = () => {
+  return (
+    <Container>
+      <NavBar />
+   
       <ContainerTransp>
         <Content>
           <ContainerT>
-            <h1> Venha para sem limites </h1>
+            <h1> Sem limites </h1>
           </ContainerT>
           <ContainerSubT>
             <h2>
@@ -168,6 +179,7 @@ export const Parte1 = () => {
           </ContainerB>
         </Content>
       </ContainerTransp>
+      <Line2></Line2>
     </Container>
   );
 };
