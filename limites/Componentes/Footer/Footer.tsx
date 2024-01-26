@@ -117,8 +117,12 @@ const ContainerIMG = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        width: "700px",
+        width: "400px",
         height: "400px",
+        backgroundImage: `url('20.png')`,
+        backgroundSize: "cover", 
+        backgroundPosition: "center", 
+        backgroundRepeat: "no-repeat", 
   
       },
 });
