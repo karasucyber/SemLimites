@@ -4,6 +4,8 @@ import NavBar from "@/Componentes/NavBAr/Bar";
 import React from "react";
 import styled from "styled-components";
 import Forms from "./Componentes/Forms";
+import ReactPlayer from 'react-player';
+
 const Container = styled.body({
     display: "flex",
     flexDirection: "column",
@@ -19,11 +21,61 @@ const Container = styled.body({
     backgroundRepeat: "no-repeat", 
   });
 
+  const ContainerV = styled.div({
+    display: "flex",
+    justifyContent: 'center',
+    height: "100%",
+    width: "99%",
+    padding: "10px",
+    '@media (max-width: 758px)': {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center",
+  
+    },
+  });
+
+  
+  const StyledContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: white;
+  `;
+  
+  const StyledButton = styled.button`
+    background-color: purple;
+    color: white;
+    padding: 20px 40px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+  `;
+  
+  const GoogleFormsButton = () => {
+    return (
+      <StyledContainer>
+        <StyledButton>Google Forms</StyledButton>
+      </StyledContainer>
+    );
+  };
+  
+  
 export default function PageBolsista(){
     return(
      <Container>
         <NavBar/>
-        <Forms></Forms>
+        <ContainerV>
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            width="80%"
+            height="600px"/>          
+          </ContainerV>
+          <StyledContainer>
+        <StyledButton>Google Forms</StyledButton>
+      </StyledContainer>
         <Footer/> 
     </Container>)
 }
