@@ -120,7 +120,7 @@ const ContainerIMG = styled.div({
     alignItems: "center",
     width: "400px",
     height: "400px",
-    backgroundImage: `url('.png')`,
+    backgroundImage: `url('20.png')`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
