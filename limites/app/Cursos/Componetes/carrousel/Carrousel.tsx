@@ -109,6 +109,8 @@ const Container8 = styled.div({
 
 const Button = styled.button({
   width: "80%",
+  height: "20%",
+  padding:"2px",
   borderRadius: "10px",
   background: "black",
   color: "white"
