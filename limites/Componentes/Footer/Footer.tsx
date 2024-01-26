@@ -13,14 +13,14 @@ const Amarelo = styled.a`
 
 const Container = styled.div({
   display: "flex",
-
   height: "100%",
   width: "99%",
-  background: "white",
-  backgroundImage: `url('19.jpg')`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
+  background: "black",
+  color: "white",
+  backgroundImage: `url('19.png')`,
+  backgroundSize: "cover", 
+  backgroundPosition: "center", 
+  backgroundRepeat: "no-repeat", 
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -28,6 +28,7 @@ const Container = styled.div({
     alignItems: "center",
   },
 });
+
 
 const ContainerRight = styled.div({
   color: "white",
@@ -64,9 +65,9 @@ const ContainerLeft2 = styled.div({
   display: "flex",
   justifyItems: "center",
   flexDirection: "column",
-  justifyContent: "flex-end",
-  width: "100%",
-  height: "1000%",
+  justifyContent: "flex-start",
+  width: "90%",
+  height: "100%",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -81,9 +82,81 @@ const StyledButton = styled.div({
   fontSize: "30px",
 })
 
+
+
+const Titulo = styled.div({
+    display: "flex",
+    justifyContent: "center",
+    fontSize: "50px",   
+    color: "#D5E528",
+    padding: "10px",
+    margin: "100px",
+    '@media (max-width: 758px)': {
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+        fontSize: "45px"
+       
+      },
+});
+
+const ContainerIMG = styled.div({
+    display: "flex",
+    justifyContent: "center",
+    backgroundImage: `url('18.png')`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundRepeat: "no-repeat", 
+    width: "1400px",
+    height: "700px",
+    '@media (max-width: 758px)': {
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "700px",
+        height: "400px",
+  
+      },
+});
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 40px;
+  margin: 50px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    font-size: 30px;
+    margin: 30px;
+  }
+
+  @media (max-width: 480px) {
+    width: 90%;
+    font-size: 20px;
+    margin: 20px;
+  }
+`;
+
+
+
+
 const Footer = () => {
   return (
-    <Container>
+<>
+<ContainerIMG> 
+        </ContainerIMG>
+<Container> 
+     
       <ContainerRight>
         <h1><Amarelo href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
         <h1><Amarelo href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>
@@ -115,7 +188,7 @@ const Footer = () => {
           </StyledButton>
         </ContainerLeft2>
       </ContainerLeft>
-    </Container>
+    </Container></>
   );
 };
 

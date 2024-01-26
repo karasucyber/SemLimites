@@ -2,11 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import ReactPlayer from "react-player";
 import NavBar from "../NavBAr/Bar";
+import Line2 from "../Line";
 
 const Container = styled.div`
   position: relative ;
   width: 100% ;
-  height: 1200px ;
+  height: 1000px ;
   display: flex ;
   flex-direction: column ;
   justify-content: center ;
@@ -138,13 +139,6 @@ const Amarelo = styled.a`
   }
 `;
 
-const Line2 = styled.div({
-  display: "block",
-  margin: "auto",
-  width: "80%",
-  height: "1px",
-  background: "Black"
-});
 
 
 /*   <VideoBackground
@@ -159,9 +153,9 @@ const Line2 = styled.div({
 
 export const Parte1 = () => {
   return (
+  <>
+        <NavBar />
     <Container>
-      <NavBar />
-   
       <ContainerTransp>
         <Content>
           <ContainerT>
@@ -179,8 +173,9 @@ export const Parte1 = () => {
           </ContainerB>
         </Content>
       </ContainerTransp>
-      <Line2></Line2>
     </Container>
+   </>
+
   );
 };
 

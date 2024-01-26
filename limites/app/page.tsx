@@ -6,6 +6,8 @@ import Parte2 from '@/Componentes/Parte2/Parte2';
 import Parte3  from '@/Componentes/Parte3/Parte3';
 import Parte4 from '@/Componentes/Parte4/Parte4';
 import Footer from '@/Componentes/Footer/Footer';
+import Parte5 from '@/Componentes/Parte5/Parte5';
+import Parte6 from '@/Componentes/Parte6/Parte6';
 
 const Container = styled.body({
   display: "flex",
@@ -16,10 +18,7 @@ const Container = styled.body({
   padding: "0px",
   margin: "0px",
   border: "none",
-  backgroundImage: `url('19.jpg')`,
-  backgroundSize: "cover", 
-  backgroundPosition: "center", 
-  backgroundRepeat: "no-repeat", 
+background: "black",
 });
 
 
@@ -29,6 +28,8 @@ export default function Home() {
     <Container>
       <Parte1/>
       <Parte2/>
+      <Parte5/>
+      <Parte6/>
       <Parte3/>
       <Parte4/>
       <Footer/>

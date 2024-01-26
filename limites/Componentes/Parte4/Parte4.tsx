@@ -4,15 +4,16 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
 import styled from 'styled-components';
 import ReactPlayer from "react-player";
+import Line2 from '../Line';
 
 const Container = styled.div({
   width: "100%",
   height: "1000px",
-  backgroundImage: `url('19.jpg')`,
+
+  backgroundImage: `url('Design sem nome (3).png (4).png')`,
   backgroundSize: "cover", 
   backgroundPosition: "center", 
   backgroundRepeat: "no-repeat", 
-   
   '@media (max-width: 758px)': {
     width: "650px",
     height: "650px",
@@ -90,17 +91,13 @@ function Model(props: ModelProps) {
     </group>
   );
 }
-const Line2 = styled.div({
-  display: "block",
-  margin: "auto",
-  width: "80%",
-  height: "1px",
-  background: "white"
-});
+
+
 
 export default function Parte4() {
   return (
 <> 
+
 <Container>
       <Canvas camera={{ position: [-5, 0, -15], fov: 55 }}>
       <pointLight position={[10, 10, 10]} intensity={1.5} />
@@ -116,7 +113,6 @@ export default function Parte4() {
     </Canvas>
  </Container>
  
- <Line2>
-  </Line2></>
+</>
   );
 }

@@ -15,10 +15,8 @@ const Container = styled.body({
     padding: "0px",
     margin: "0px",
     border: "none",
-    backgroundImage: `url('19.jpg')`,
-    backgroundSize: "cover", 
-    backgroundPosition: "center", 
-    backgroundRepeat: "no-repeat", 
+    background: "black"
+   
   });
 
 
@@ -27,8 +25,8 @@ export default function PageCursos(){
     
     return(
         <Container> 
-            <NavBar/>
              <Parte1/>
+
              <Planos></Planos>
 
             <Footer/>

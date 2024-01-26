@@ -11,8 +11,7 @@ const Container = styled.div({
     height: "1000px",
     width: "100%",
     color: "white",
-    backgroundImage: `url('Design sem nome (3).png (2).png')`,
-    backgroundSize: "cover", 
+    backgroundImage: `url('Design sem nome (3).png (2).png')`,    backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
 })
@@ -38,12 +37,12 @@ const Titulo = styled.div({
 const ContainerIMG = styled.div({
     display: "flex",
     justifyContent: "center",
-    backgroundImage: `url('img2.jpg')`,
+    backgroundImage: `url('17.png')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
-    width: "1400px",
-    height: "700px",
+    width: "1700px",
+    height: "900px",
     '@media (max-width: 758px)': {
         display: "flex",
         justifyContent: "center",
@@ -82,32 +81,16 @@ const Content = styled.div`
 `;
 
 
-
-export const Parte3 = () => {
+export const Parte6 = () => {
     return(<> 
      <Container> 
-
-        <Titulo> Soluções </Titulo>
-        <Content>
-          <ul>
-              <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
-              <br></br>
-              <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
-              <br></br>
-              <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
-              <br></br>
-              <li>INGLÊS COMO SEGUNDO IDIOMA</li>
-              <br></br>
-              <li>JOVENS PERIFÉRICOS</li>
-              <br></br>
-              <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
-          </ul>
-     </Content>
+        <Titulo> Problemas que solucionamos !!!</Titulo>
+        <ContainerIMG> 
+        </ContainerIMG>
      </Container>
-
      </>
      )
 }
 
 
-export default Parte3;
+export default Parte6;

@@ -13,7 +13,7 @@ const Container = styled.body({
     padding: "0px",
     margin: "0px",
     border: "none",
-    backgroundImage: `url('19.jpg')`,
+    backgroundImage: `url('3.png')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 

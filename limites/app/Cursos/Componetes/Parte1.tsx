@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
 import Planos from "./carrousel/Carrousel";
+import NavBar from "@/Componentes/NavBAr/Bar";
 
 const Container = styled.div({
   display: "flex",
@@ -10,6 +11,7 @@ const Container = styled.div({
   alignItems: "center",
   height: "100%",
   width: "100%",
+  backgroundImage: `url('5.png')`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -179,6 +181,8 @@ const CardContainer = styled.div`
   width: 300px;
   height: 400px;
   perspective: 1000px;
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
+
 `;
 
 const Card = styled.div<{ isFlipped: boolean }>`
@@ -187,7 +191,9 @@ const Card = styled.div<{ isFlipped: boolean }>`
   transform-style: preserve-3d;
   transition: transform 0.6s;
   transform: ${(props) => (props.isFlipped ? 'rotateY(180deg)' : 'rotateY(0)')};
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
 `;
+
 
 const CardFace = styled.div`
   width: 100%;
@@ -197,25 +203,36 @@ const CardFace = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
+
 `;
 
 const FrontFace = styled(CardFace)`
   background-color: #333;
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
+
 `;
 
 const BackFace = styled(CardFace)`
   background-color: #555;
   transform: rotateY(180deg);
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
+
 `;
 
 const CardImage = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height:100%;
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
+
+   
 `;
 
 const CardDescription = styled.p`
   color: white;
   text-align: center;
+  border-radius: 20px; /* Ajuste o valor conforme necessário */
+
 `;
 
 interface CardFlipProps {
@@ -270,6 +287,7 @@ const Titulo2 = styled.div({
 const Parte1 = () => {
   return (
     <Container>
+      <NavBar/>
       <Titulo>Por que nossos cursos!</Titulo>
       <Container1>
         <Container2>
@@ -293,21 +311,21 @@ const Parte1 = () => {
       <Titulo>Por que nossos cursos!</Titulo>
       <Titulo2>Front-end </Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="7.png" description="Descrição do card"/>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="10.png" description="Descrição do card"/>
+        <CardFlip imageSrc="11.png" description="Descrição do card"/>
+        <CardFlip imageSrc="12.png" description="Descrição do card"/>
       </FlexContainer>
       <Titulo2>Back-end </Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="13.png" description="Descrição do card"/>
+        <CardFlip imageSrc="14.png" description="Descrição do card"/>
+        <CardFlip imageSrc="15.png" description="Descrição do card"/>
       </FlexContainer>
       <Titulo2>Inglês</Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
-        <CardFlip imageSrc="https://example.com/image.jpg" description="Descrição do card"/>
+        <CardFlip imageSrc="16.png" description="Descrição do card"/>
+        <CardFlip imageSrc="17.png" description="Descrição do card"/>
+        <CardFlip imageSrc="10.png" description="Descrição do card"/>
       </FlexContainer>
     </Container>
   );
