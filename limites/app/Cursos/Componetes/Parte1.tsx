@@ -77,6 +77,8 @@ const ContainerV = styled.div({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
+    height: "100%",
+    width: "100%",
 
   },
 });
