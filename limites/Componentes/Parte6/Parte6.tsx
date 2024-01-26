@@ -14,6 +14,16 @@ const Container = styled.div({
     backgroundImage: `url('Design sem nome (3).png (2).png')`,    backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
+    '@media (max-width: 758px)': {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+      alignItems: "center",
+      fontSize: "45px",
+      backgroundImage: `url('.png')`,   
+
+     
+    },
 })
 
 const Titulo = styled.div({

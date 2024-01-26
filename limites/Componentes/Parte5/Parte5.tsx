@@ -20,8 +20,11 @@ const Container = styled.div({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
+    margin: "50px",
     height: "100%",
     width: "100%",
+    backgroundImage: `url('.png')`,
+
   },
 });
 

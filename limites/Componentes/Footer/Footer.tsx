@@ -26,6 +26,8 @@ const Container = styled.div({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
+    backgroundImage: `url('.png')`,
+
   },
 });
 

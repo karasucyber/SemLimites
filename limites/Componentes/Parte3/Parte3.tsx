@@ -15,6 +15,12 @@ const Container = styled.div({
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
+    '@media (max-width: 758px)': {
+      backgroundImage: `url('.png')`,
+
+  
+     
+    },
 })
 
 const Titulo = styled.div({
