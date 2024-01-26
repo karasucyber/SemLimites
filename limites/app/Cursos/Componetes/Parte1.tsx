@@ -19,6 +19,8 @@ const Container = styled.div({
     height: "100%",
     width: "100%",
     flexDirection: "column",
+    backgroundImage: `url('.png')`,
+
   },
 })
 
@@ -289,6 +291,13 @@ const Parte1 = () => {
     <Container>
       <NavBar/>
       <Titulo>Por que nossos cursos!</Titulo>
+      <ContainerV>
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            width="100%"
+            height="400px"/>          
+          </ContainerV>
+
       <Container1>
         <Container2>
           <Content>
@@ -323,9 +332,9 @@ const Parte1 = () => {
       </FlexContainer>
       <Titulo2>Inglês</Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="16.png" description="Descrição do card"/>
-        <CardFlip imageSrc="17.png" description="Descrição do card"/>
-        <CardFlip imageSrc="10.png" description="Descrição do card"/>
+        <CardFlip imageSrc="21.png" description="Descrição do card"/>
+        <CardFlip imageSrc="22.png" description="Descrição do card"/>
+        <CardFlip imageSrc="23.png" description="Descrição do card"/>
       </FlexContainer>
     </Container>
   );

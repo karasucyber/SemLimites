@@ -22,8 +22,13 @@ const ContainerG = styled.div({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
-    height: "100%",
-    alignItems: "center"
+    '@media (max-width: 758px)': {
+      height: "100%",
+      width: "100%",
+      flexDirection: "column",
+      backgroundImage: `url('.png')`,
+  
+    },
   },
 })
 
@@ -124,7 +129,7 @@ export const Planos = () => {
         style={{
         
         }}>
-        <Swiper
+      <Swiper
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
@@ -139,7 +144,9 @@ export const Planos = () => {
           }}
           pagination={true}
           modules={[EffectCoverflow, Navigation]}
-          className="swiper">
+          className="swiper"
+          style={{ maxWidth: '800px', margin: '0 auto' }} // Adicionei um estilo para limitar a largura do Swiper
+        >
           <SwiperSlide>
             <Container1>
               <Container2>

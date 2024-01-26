@@ -18,9 +18,9 @@ const Container = styled.div({
   background: "black",
   color: "white",
   backgroundImage: `url('19.png')`,
-  backgroundSize: "cover", 
-  backgroundPosition: "center", 
-  backgroundRepeat: "no-repeat", 
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -82,49 +82,50 @@ const ContainerLeft2 = styled.div({
 
 const StyledButton = styled.div({
   fontSize: "30px",
+  color: "white",
 })
 
 
 
 const Titulo = styled.div({
+  display: "flex",
+  justifyContent: "center",
+  fontSize: "50px",
+  color: "#D5E528",
+  padding: "10px",
+  margin: "100px",
+  '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
-    fontSize: "50px",   
-    color: "#D5E528",
-    padding: "10px",
-    margin: "100px",
-    '@media (max-width: 758px)': {
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-        fontSize: "45px"
-       
-      },
+    flexDirection: "column",
+    alignItems: "center",
+    fontSize: "45px"
+
+  },
 });
 
 const ContainerIMG = styled.div({
+  display: "flex",
+  justifyContent: "center",
+  backgroundImage: `url('18.png')`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  width: "1400px",
+  height: "700px",
+  '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
-    backgroundImage: `url('18.png')`,
-    backgroundSize: "cover", 
-    backgroundPosition: "center", 
-    backgroundRepeat: "no-repeat", 
-    width: "1400px",
-    height: "700px",
-    '@media (max-width: 758px)': {
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-        width: "400px",
-        height: "400px",
-        backgroundImage: `url('20.png')`,
-        backgroundSize: "cover", 
-        backgroundPosition: "center", 
-        backgroundRepeat: "no-repeat", 
-  
-      },
+    flexDirection: "column",
+    alignItems: "center",
+    width: "400px",
+    height: "400px",
+    backgroundImage: `url('.png')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+
+  },
 });
 
 const Content = styled.div`
@@ -158,43 +159,41 @@ const Content = styled.div`
 
 const Footer = () => {
   return (
-<>
-<ContainerIMG> 
-        </ContainerIMG>
-<Container> 
-     
-      <ContainerRight>
-        <h1><Amarelo href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
-        <h1><Amarelo href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>
-        <h1><Amarelo href=""><MdOutlineAttachEmail /></Amarelo> contato@semlimitesed.tech </h1>
-      </ContainerRight>
-      <ContainerLeft>
-        <ContainerLeft2>
-          <Amarelo><h2>Alunos</h2></Amarelo>
-          <StyledButton>
-            <h6>Bolsista</h6>
-            <h6>Cadastro </h6>
-          </StyledButton>
-        </ContainerLeft2>
-        <ContainerLeft2>
-          <Amarelo><h2>Empresas</h2></Amarelo>
-          <StyledButton>
+    <>
+      <ContainerIMG>
+      </ContainerIMG>
+      <Container>
+
+        <ContainerRight>
+          <h1><Amarelo href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
+          <h1><Amarelo href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>
+          <h1><Amarelo href=""><MdOutlineAttachEmail /></Amarelo> contato@semlimitesed.tech </h1>
+        </ContainerRight>
+       <ContainerLeft>
+          <ContainerLeft2>
+            <Amarelo><h2>Alunos</h2></Amarelo>
             <StyledButton>
-              <h6>Cadastro </h6>
-              <h6>Parceiros</h6>
+              <a href="/Bolsista"><h6>Bolsista</h6></a>
+              <a href="/Bolsista"><h6>Cadastro</h6></a>
             </StyledButton>
-          </StyledButton>
-        </ContainerLeft2>
-        <ContainerLeft2>
-          <Amarelo><h2>Cursos</h2></Amarelo>
-          <StyledButton>
-            <h6>Front-end</h6>
-            <h6>Back-end</h6>
-            <h6>inglês</h6>
-          </StyledButton>
-        </ContainerLeft2>
-      </ContainerLeft>
-    </Container></>
+          </ContainerLeft2>
+          <ContainerLeft2>
+            <Amarelo><h2>Empresas</h2></Amarelo>
+            <StyledButton>
+              <a href="/Empresas"><h6>Cadastro</h6></a>
+              <a href="/Empresas"><h6>Parceiros</h6></a>
+            </StyledButton>
+          </ContainerLeft2>
+          <ContainerLeft2>
+            <Amarelo><h2>Cursos</h2></Amarelo>
+            <StyledButton>
+              <a href="/Cursos"><h6>Front-end</h6></a>
+              <a href="/Cursos"><h6>Back-end</h6></a>
+              <a href="/Cursos"><h6>Inglês</h6></a>
+            </StyledButton>
+          </ContainerLeft2>
+        </ContainerLeft>         
+      </Container></>
   );
 };
 
