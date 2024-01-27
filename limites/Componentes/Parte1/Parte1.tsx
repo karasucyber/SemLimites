@@ -4,29 +4,26 @@ import ReactPlayer from "react-player";
 import NavBar from "../NavBAr/Bar";
 import Line2 from "../Line";
 
-const Container = styled.div`
-  position: relative ;
-  width: 100% ;
-  height: 1000px ;
-  display: flex ;
-  flex-direction: column ;
-  justify-content: center ;
-  align-items: center ;
-   
-  
+const Container = styled.div({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100%",
+  width: "100%",
+  backgroundImage: `url('.png')`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  '@media (max-width: 758px)': {
+    height: "100%",
+    width: "100%",
+    flexDirection: "column",
+    backgroundImage: `url('.png')`,
 
-  @media (max-width: 768px) {
-    width: 100% ;
-  height: 100% ;
-  display: flex ;
-  flex-direction: column ;
-  justify-content: center ;
-  align-items: center ;
-   
-    
+  },
+})
 
-  }
-`;
 
 const VideoBackground = styled(ReactPlayer)`
   position: absolute;

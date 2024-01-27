@@ -160,8 +160,7 @@ const Content = styled.div`
 const Footer = () => {
   return (
     <>
-      <ContainerIMG>
-      </ContainerIMG>
+ 
       <Container>
 
         <ContainerRight>

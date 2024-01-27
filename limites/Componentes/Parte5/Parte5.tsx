@@ -1,136 +1,108 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import ReactPlayer from 'react-player';
-import { AiFillBook } from "react-icons/ai";
-import { AiFillEdit } from "react-icons/ai";
-import { AiFillShopping } from "react-icons/ai";
-import { AiFillHome } from "react-icons/ai";
+import { AiFillBook, AiFillEdit, AiFillShopping, AiFillHome } from "react-icons/ai";
 import { PiStudentBold } from "react-icons/pi";
 import Line2 from "../Line";
 
-const Container = styled.div({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "1000px",
-  width: "100%",
-  backgroundImage: `url('Design sem nome (3).png (2).png')`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  '@media (max-width: 758px)': {
-    margin: "50px",
-    height: "100%",
-    width: "100%",
-    backgroundImage: `url('.png')`,
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  width: 100%;
+  background-image: url('6.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  },
-});
+  @media (max-width: 758px) {
+    margin: 50px;
+    height: auto;
+    width: 100%;
+    background-image: url('.png');
+  }
+`;
 
-const Titulo = styled.div({
-  display: "flex",
-  justifyContent: "center",
-  fontSize: "60px",
-  color: "#D5E528",
-  padding: "10px",
-  '@media (max-width: 758px)': {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
-});
+const Titulo = styled.div`
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: #D5E528;
+  padding: 10px;
 
+  @media (max-width: 758px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+`;
 
-const ContainerT = styled.div({
-  display: "flex",
-  fontSize: "20px",
-  height: "100%",
-  width: "99%",
-  justifyContent: 'center',
-  color: "white",
-  padding: "10px",
-  '@media (max-width: 758px)': {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
-});
+const ContainerN = styled.div`
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55%;
+  padding: 10px;
 
+  @media (max-width: 758px) {
+    align-items: center;
+    width: 100%;
+  }
+`;
 
+const Amarelo = styled.a`
+  color: #D5E528;
+`;
 
-const ContainerN = styled.div({
-  color: "white",
-  display: "flex",
-  justifyContent: "center",
-  flexDirection: "column",
-  alignItems: "flex-start",
-  width: "55%",
-  height: "100%",
-  padding: "10px",
-  '@media (max-width: 758px)': {
-    alignItems: "center",
-    width: "55%",
-  },
-});
+const ContainerIcons = styled.span`
+  padding: 10px;
+  font-size: 50px;
 
+  @media (max-width: 758px) {
+    /* Adjustments for smaller screens */
+  }
+`;
 
-const Amarelo = styled.a({
-  color: "#D5E528",
-  '@media (max-width: 758px)': {
+const Titulo1 = styled.h1`
+  font-size: 20px;
+  padding: 10px;
 
-  },
-})
+  @media (max-width: 758px) {
+    /* Adjustments for smaller screens */
+  }
+`;
 
-const ContainerIcons = styled.span({
-  padding: "10px",
-  fontSize: "50px",
-  '@media (max-width: 758px)': {
+const Paragrafo = styled.p`
+  font-size: 30px;
 
+  @media (max-width: 758px) {
+    /* Adjustments for smaller screens */
+  }
+`;
 
-  },
-})
+const ContainerNumber = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  width: 100%;
+  color: white;
+  flex-direction: column;
+  margin: 50px;
 
-const Titulo1 = styled.h1({
-  fontSize: "20px",
-  padding: "10px",
-  '@media (max-width: 758px)': {
+  @media (max-width: 758px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+`;
 
-  },
-
-})
-
-const Paragrafo = styled.p({
-  fontSize: "30px",
-  '@media (max-width: 758px)': {
-
-  },
-})
-
-
-const ContainerNumber  = styled.div({
-  display: "flex",
-  alignItems: "center",
-  justifyItems: "center",
-  justifyContent: "center",
-  fontSize: "20px",
-  height: "1000px",
-  width: "100%",
-  color: "white",
-  flexDirection: "column",
-  margin: "50px",
-
-
-  '@media (max-width: 758px)': {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
-});
-
-
-
-const CustomCounter: React.FC<{ initialValue: number, incrementValue: number, maxLimit: number }> = ({ initialValue, incrementValue, maxLimit }) => {
+const CustomCounter: React.FC<{ initialValue: number; incrementValue: number; maxLimit: number }> = ({ initialValue, incrementValue, maxLimit }) => {
   const [counterNumber, setCounterNumber] = useState(initialValue);
 
   useEffect(() => {
@@ -140,7 +112,7 @@ const CustomCounter: React.FC<{ initialValue: number, incrementValue: number, ma
 
         if (newCounter >= maxLimit) {
           clearInterval(updateCounter);
-          return maxLimit / 10; 
+          return maxLimit / 10;
         }
 
         return newCounter;
@@ -150,22 +122,16 @@ const CustomCounter: React.FC<{ initialValue: number, incrementValue: number, ma
     return () => clearInterval(updateCounter);
   }, [incrementValue, maxLimit, initialValue]);
 
-  return (
-    <a>{counterNumber}</a>
-  );
+  return <span>{counterNumber}</span>;
 };
-
-
-
 
 const Parte5 = () => {
   return (
-<>
-<Container>
-      <ContainerNumber> 
-
-      <Titulo>Você sabia que</Titulo>
-             <ContainerN>
+    <>
+      <Container>
+        <ContainerNumber>
+          <Titulo>Você sabia que</Titulo>
+          <ContainerN>
         <h1>
           <ContainerIcons><AiFillShopping /></ContainerIcons>
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={9000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
@@ -198,10 +164,10 @@ const Parte5 = () => {
           <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos <Amarelo>jovens</Amarelo> entre 18 a 35 anos não estão no <Amarelo> ensino superior</Amarelo>
         </h1>
       </ContainerN>
-      </ContainerNumber>
 
-    </Container>
-     </>
+        </ContainerNumber>
+      </Container>
+    </>
   );
 };
 
