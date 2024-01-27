@@ -18,9 +18,8 @@ const Container = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 758px) {
-    margin: 50px;
-    height: auto;
-    width: 100%;
+    height: 1700px;
+    width: 300px;
     background-image: url('.png');
   }
 `;

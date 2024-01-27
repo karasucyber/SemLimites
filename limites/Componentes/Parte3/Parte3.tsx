@@ -17,6 +17,8 @@ const Container = styled.div({
     backgroundRepeat: "no-repeat", 
     '@media (max-width: 758px)': {
       backgroundImage: `url('.png')`,
+      height: "1400px",
+      width: "400px",
 
   
      
@@ -75,9 +77,10 @@ const Content = styled.div`
   margin: 50px;
 
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
+    height: 50%;
+
     font-size: 30px;
-    margin: 30px;
   }
 
   @media (max-width: 480px) {

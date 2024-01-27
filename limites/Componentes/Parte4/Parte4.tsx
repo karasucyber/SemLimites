@@ -17,7 +17,6 @@ const Container = styled.div({
   '@media (max-width: 758px)': {
     width: "650px",
     height: "650px",
-    backgroundImage: `url('Design sem nome (3).png (4).png')`,
 
     
   },

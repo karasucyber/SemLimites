@@ -22,6 +22,8 @@ const Container = styled.div({
       alignItems: "center",
       fontSize: "45px",
       backgroundImage: `url('.png')`,   
+      height: "800px",
+      width: "400px",
 
      
     },

@@ -17,7 +17,7 @@ const Container = styled.div({
   backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
     height: "100%",
-    width: "100%",
+    width: "80%",
     flexDirection: "column",
     backgroundImage: `url('.png')`,
 

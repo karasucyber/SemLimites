@@ -27,7 +27,7 @@ const Container = styled.div`
     animation: ${borderAnimation} 1.5s infinite; /* Adiciona a animação no hover */
     border-bottom-color: darkgray;}
   @media (max-width: 768px) {
-    width: 100%;
+    width: 80%;
     height: 100%;
     padding: 10px;
     margin: 10px;

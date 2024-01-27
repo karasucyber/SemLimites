@@ -22,7 +22,6 @@ const ContainerG = styled.div({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
-    '@media (max-width: 758px)': {
       height: "100%",
       width: "100%",
       flexDirection: "column",
@@ -30,10 +29,11 @@ const ContainerG = styled.div({
   
     },
   },
-})
+)
 
 const Container = styled.div({
   height: "100%",
+  width: "350px",
   background: "white",
   borderRadius: "30px",
   border: "5px solid #d5e528" // Adiciona borda de cor amarelo limão
@@ -82,7 +82,7 @@ const Container4 = styled.div({
 
 const Container5 = styled.div({
   textAlign: "center",
-  fontSize: "30px",
+  fontSize: "20px",
   width: "100%",
   display: "flex",
   justifyContent: "center",
