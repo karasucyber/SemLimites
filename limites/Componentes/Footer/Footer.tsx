@@ -14,7 +14,7 @@ const Amarelo = styled.a`
 const Container = styled.div({
   display: "flex",
   height: "100%",
-  width: "99%",
+  width: "1400px",
   background: "black",
   color: "white",
   backgroundImage: `url('19.png')`,
@@ -160,7 +160,8 @@ const Content = styled.div`
 const Footer = () => {
   return (
     <>
- 
+      <ContainerIMG>
+      </ContainerIMG>
       <Container>
 
         <ContainerRight>

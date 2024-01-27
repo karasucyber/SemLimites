@@ -9,7 +9,7 @@ const Container = styled.div({
     justifyContent: "center",
     alignItems: "center",
     height: "1000px",
-    width: "100%",
+    width: "1400px",
     color: "white",
     backgroundImage: `url('5.png')`,   
      backgroundSize: "cover", 
@@ -52,7 +52,7 @@ const ContainerIMG = styled.div({
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
-    width: "1700px",
+    width: "1400px",
     height: "900px",
     '@media (max-width: 758px)': {
         display: "flex",

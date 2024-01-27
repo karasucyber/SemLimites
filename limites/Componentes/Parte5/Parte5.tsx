@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   height: 1000px;
-  width: 100%;
+  width: 1400px;
   background-image: url('6.png');
   background-size: cover;
   background-position: center;

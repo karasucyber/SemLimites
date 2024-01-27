@@ -18,7 +18,7 @@ const Container = styled.body({
   padding: "0px",
   margin: "0px",
   border: "none",
-background: "black",
+background: "#3C3C3C",
 });
 
 
