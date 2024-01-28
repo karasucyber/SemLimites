@@ -7,10 +7,10 @@ import ReactPlayer from "react-player";
 import Line2 from '../Line';
 
 const Container = styled.div({
-  width: "100%",
+  width: "1400px",
   height: "1000px",
 
-  backgroundImage: `url('4.png')`,
+  backgroundImage: `url('3.png')`,
   backgroundSize: "cover", 
   backgroundPosition: "center", 
   backgroundRepeat: "no-repeat", 

@@ -141,17 +141,15 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   color: white;
-  width: 70%;
+  width: 100%;
   height: 100%;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   border-radius: 50px;
   padding: 10px;
   font-size: 35px;
-  margin: 50px;
   @media (max-width: 768px) {
-    width: 80%;
-    font-size: 30px;
-    margin: 30px;
+    width: 90%;
+    font-size: 25px;
   }
   @media (max-width: 480px) {
     width: 90%;
@@ -234,9 +232,10 @@ const CardImage = styled.img`
 
 const CardDescription = styled.p`
   color: white;
-  text-align: center;
+  text-align: start;
   border-radius: 20px; /* Ajuste o valor conforme necessário */
-
+  padding: 10px;
+  font-size: 18px; /* Correção: a propriedade correta é font-size */
 `;
 
 interface CardFlipProps {
@@ -294,10 +293,10 @@ const Parte1 = () => {
       <NavBar/>
       <Titulo>Por que nossos cursos!</Titulo>
       <ContainerV>
-          <ReactPlayer
+      <ReactPlayer
             url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
-            width="100%"
-            height="400px"/>          
+            width="80%"
+            height="600px"/>          
           </ContainerV>
 
       <Container1>
@@ -322,15 +321,20 @@ const Parte1 = () => {
       <Titulo>Por que nossos cursos!</Titulo>
       <Titulo2>Front-end </Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="10.png" description="Descrição do card"/>
-        <CardFlip imageSrc="11.png" description="Descrição do card"/>
-        <CardFlip imageSrc="12.png" description="Descrição do card"/>
+        <CardFlip imageSrc="10.png" description="
+JavaScript é uma linguagem de programação versátil amplamente usada para desenvolvimento web. Com um ecossistema dinâmico de bibliotecas e frameworks, como React e Angular, é possível criar aplicações interativas e escaláveis. Sua comunidade ativa e suporte contínuo garantem a relevância e evolução constante da linguagem."/>
+        <CardFlip imageSrc="11.png" description="
+HTML (Hypertext Markup Language) é a linguagem essencial para construir páginas web, fornecendo a estrutura fundamental para organizar conteúdo, como textos e imagens. Sua semântica rica, com elementos como <header> e <article>, não só estrutura, mas também atribui significado ao conteúdo, beneficiando a acessibilidade e otimizando a indexação por motores de busca. A integração perfeita com CSS e JavaScript possibilita a criação de experiências web interativas e visualmente atraentes, tornando o HTML uma peça fundamental no desenvolvimento moderno de sites."/>
+        <CardFlip imageSrc="12.png" description="CSS (Cascading Style Sheets) é a linguagem que dá estilo e formato a páginas web, permitindo controle preciso sobre layout, cores e tipografia. Sua simplicidade e flexibilidade são fundamentais para criar designs atraentes e responsivos, tornando a experiência do usuário mais agradável."/>
       </FlexContainer>
       <Titulo2>Back-end </Titulo2>
       <FlexContainer>
-        <CardFlip imageSrc="13.png" description="Descrição do card"/>
-        <CardFlip imageSrc="14.png" description="Descrição do card"/>
-        <CardFlip imageSrc="15.png" description="Descrição do card"/>
+        <CardFlip imageSrc="13.png" description="
+Kotlin, uma linguagem moderna e concisa, é projetada para oferecer uma experiência de programação expressiva e segura. Com interoperabilidade total com o Java, ela é ideal para o desenvolvimento de aplicativos Android, fornecendo simplicidade e robustez. Sua sintaxe concisa, suporte a programação funcional e nulabilidade controlada tornam Kotlin uma escolha poderosa para desenvolvedores."/>
+        <CardFlip imageSrc="14.png" description="
+Python, conhecida por sua simplicidade e legibilidade, é uma linguagem de programação versátil utilizada em uma variedade de domínios. Com uma sintaxe clara e ampla comunidade de suporte, Python é ideal para desenvolvimento web, automação, análise de dados e inteligência artificial. Sua abordagem amigável atrai tanto iniciantes quanto profissionais, tornando-a uma escolha popular no mundo da programação."/>
+        <CardFlip imageSrc="15.png" description="
+Node.js, construído sobre o motor V8 do Google Chrome, permite a execução de código JavaScript no lado do servidor. Essa plataforma é especialmente reconhecida por sua eficiência em operações assíncronas, sendo ideal para construir aplicações escaláveis em tempo real. Com um vasto ecossistema de pacotes no npm, Node.js oferece uma base sólida para o desenvolvimento de servidores web e aplicações back-end de alta performance."/>
       </FlexContainer>
       <Titulo2>Inglês</Titulo2>
       <FlexContainer>

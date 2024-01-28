@@ -151,8 +151,9 @@ const Amarelo = styled.a`
 export const Parte1 = () => {
   return (
   <>
-        <NavBar />
     <Container>
+    <NavBar />
+
       <ContainerTransp>
         <Content>
           <ContainerT>

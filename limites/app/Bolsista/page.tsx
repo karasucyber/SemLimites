@@ -15,7 +15,7 @@ const Container = styled.body({
     padding: "0px",
     margin: "0px",
     border: "none",
-    backgroundImage: `url('3.png')`,
+    backgroundImage: `url('5.png')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
@@ -24,8 +24,8 @@ const Container = styled.body({
   const ContainerV = styled.div({
     display: "flex",
     justifyContent: 'center',
-    height: "100%",
-    width: "99%",
+    height: "800px",
+    width: "1100px",
     padding: "10px",
     '@media (max-width: 758px)': {
       display: "flex",

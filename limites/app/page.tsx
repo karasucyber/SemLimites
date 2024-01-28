@@ -8,6 +8,8 @@ import Parte4 from '@/Componentes/Parte4/Parte4';
 import Footer from '@/Componentes/Footer/Footer';
 import Parte5 from '@/Componentes/Parte5/Parte5';
 import Parte6 from '@/Componentes/Parte6/Parte6';
+import { Line } from '@react-three/drei';
+import FooterCarousel from '@/Componentes/Line';
 
 const Container = styled.body({
   display: "flex",

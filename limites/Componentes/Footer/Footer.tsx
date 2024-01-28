@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaWhatsapp } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
 import { MdOutlineAttachEmail } from "react-icons/md";
+import FooterCarousel from "../Line";
 
 
 const Amarelo = styled.a`
@@ -14,7 +15,7 @@ const Amarelo = styled.a`
 const Container = styled.div({
   display: "flex",
   height: "100%",
-  width: "1400px",
+  width: "100%",
   background: "black",
   color: "white",
   backgroundImage: `url('19.png')`,
@@ -160,8 +161,7 @@ const Content = styled.div`
 const Footer = () => {
   return (
     <>
-      <ContainerIMG>
-      </ContainerIMG>
+     <FooterCarousel></FooterCarousel>
       <Container>
 
         <ContainerRight>

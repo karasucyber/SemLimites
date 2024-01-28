@@ -47,7 +47,7 @@ const ContainerBar = styled.div`
   transition: background 0.3s; // Adiciona uma transição suave para a mudança de cor ao passar o mouse
   cursor: pointer;
   &:hover {
-    background: rgba(255, 255, 120, 250); // Branco parcialmente transparente ao passar o mouse
+    background: rgba(255, 255, 255, 250 ); // Branco parcialmente transparente ao passar o mouse
   }
   @media (max-width: 768px) {
     width: 100%;

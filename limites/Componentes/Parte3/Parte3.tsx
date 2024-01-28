@@ -11,7 +11,7 @@ const Container = styled.div({
     height: "1200 px",
     width: "1400px",
     color: "white",
-    backgroundImage: `url('6.png')`,
+    backgroundImage: `url('1.png')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
