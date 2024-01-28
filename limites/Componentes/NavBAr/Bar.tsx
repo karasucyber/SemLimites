@@ -15,12 +15,11 @@ const borderAnimation = keyframes`
 
 const Container = styled.div`
   display: flex;
-  padding: 10px;
   margin: 10px;
-  width: 60%;
-  height: 3%;
+  width: 80%;
+  height: 10%;
   justify-content: flex-end;
-  background: rgba(217, 217, 217, 5); 
+  background: rgba(60, 60, 60, 0.5); 
   border-radius: 50px;
   transition: border-bottom 0.3s ease;
   &:hover {
@@ -36,13 +35,14 @@ const Container = styled.div`
 `;
 
 const ContainerBar = styled.div`
-  padding: 5px;
-  width: 15%;
-  height: 70%;
+margin: 10px;
+padding: 10px;
+  width: 20%;
+  height: 100%;
   display: flex;
   justify-content: center;
   font-size: 20px;
-  color: rgba(217, 217, 300, 20);
+  background: rgba(217, 217, 300, 0.2);
   border-radius: 10px;
   transition: background 0.3s; // Adiciona uma transição suave para a mudança de cor ao passar o mouse
   cursor: pointer;
@@ -66,13 +66,42 @@ const StyledLink = styled.a`
   color: black;
 
   &:hover {
-    
+color:  #D5E528;    
   }
 `;
+
+const ContainerBar1 = styled.div`
+  padding: 5px;
+  width: 80%;
+  height: 70%;
+  display: flex;
+
+  border-radius: 10px;
+
+`;
+
+
+const ContainerIMG = styled.div({
+  backgroundImage: `url('Design sem nome (3) (1).png')`,
+  backgroundSize: "cover", 
+  backgroundPosition: "center", 
+  backgroundRepeat: "no-repeat", 
+  width: "150px",
+  height: "50px",
+  '@media (max-width: 758px)': {
+
+      width: "500px",
+      height: "400px",
+
+    },
+});
 
 export const NavBar = () => {
   return (
     <Container>
+       <ContainerBar1>
+        <ContainerIMG></ContainerIMG>
+      </ContainerBar1>
       <ContainerBar>
         <StyledLink href="/">Inicio</StyledLink>
       </ContainerBar>

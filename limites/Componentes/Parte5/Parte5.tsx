@@ -133,34 +133,34 @@ const Parte5 = () => {
           <ContainerN>
         <h1>
           <ContainerIcons><AiFillShopping /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={9000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
+          <span><CustomCounter initialValue={50} incrementValue={25} maxLimit={130000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
         </h1>
       </ContainerN>
 
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillBook /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={55000} /></span><Amarelo>%</Amarelo> Dos brasileiros dominam o idioma <Amarelo>inglês</Amarelo>
+          <span><CustomCounter initialValue={50} incrementValue={0.1} maxLimit={10} /></span><Amarelo>%</Amarelo> Dos brasileiros dominam o idioma <Amarelo>inglês</Amarelo>
         </h1>
       </ContainerN>
 
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillEdit /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>M</Amarelo> De<Amarelo>progamadores</Amarelo> serão necessários no Brasil até 2025
+          <span><CustomCounter initialValue={50} incrementValue={10} maxLimit={100000} /></span><Amarelo>M</Amarelo> De<Amarelo>progamadores</Amarelo> serão necessários no Brasil até 2025
         </h1>
       </ContainerN>
 
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillHome /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos desempregados estão em <Amarelo>Comunidade periféricas</Amarelo>
+          <span><CustomCounter initialValue={50} incrementValue={1} maxLimit={710} /></span><Amarelo>%</Amarelo> Dos desempregados estão em <Amarelo>Comunidade periféricas</Amarelo>
         </h1>
       </ContainerN>
 
       <ContainerN>
         <h1><ContainerIcons><PiStudentBold /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={75} maxLimit={8000} /></span><Amarelo>%</Amarelo> Dos <Amarelo>jovens</Amarelo> entre 18 a 35 anos não estão no <Amarelo> ensino superior</Amarelo>
+          <span><CustomCounter initialValue={50} incrementValue={1} maxLimit={720} /></span><Amarelo>%</Amarelo> Dos <Amarelo>jovens</Amarelo> entre 18 a 35 anos não estão no <Amarelo> ensino superior</Amarelo>
         </h1>
       </ContainerN>
 
