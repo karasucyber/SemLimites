@@ -15,7 +15,10 @@ const Container = styled.body({
     padding: "0px",
     margin: "0px",
     border: "none",
-    background: "#3C3C3C"
+    backgroundImage: `url('5.png')`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundRepeat: "no-repeat", 
    
   });
 

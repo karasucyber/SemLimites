@@ -11,7 +11,7 @@ const Container = styled.div({
     height: "1000px",
     width: "1400px",
     color: "white",
-    backgroundImage: `url('5.png')`,   
+    backgroundImage: `url('3.png')`,   
      backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
@@ -24,8 +24,6 @@ const Container = styled.div({
       backgroundImage: `url('.png')`,   
       height: "800px",
       width: "400px",
-
-     
     },
 })
 
@@ -41,8 +39,7 @@ const Titulo = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        fontSize: "45px"
-       
+        fontSize: "45px",
       },
 
 });
@@ -63,7 +60,6 @@ const ContainerIMG = styled.div({
         alignItems: "center",
         width: "500px",
         height: "400px",
-  
       },
 });
 
@@ -79,13 +75,11 @@ const Content = styled.div`
   padding: 10px;
   font-size: 40px;
   margin: 50px;
-
   @media (max-width: 768px) {
     width: 80%;
     font-size: 30px;
     margin: 30px;
   }
-
   @media (max-width: 480px) {
     width: 90%;
     font-size: 20px;
@@ -104,6 +98,5 @@ export const Parte6 = () => {
      </>
      )
 }
-
 
 export default Parte6;

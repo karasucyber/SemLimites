@@ -19,7 +19,7 @@ const Container = styled.div`
   width: 80%;
   height: 10%;
   justify-content: flex-end;
-  background: rgba(60, 60, 60, 0.5); 
+  background: rgba(250, 250, 250, 0.10); 
   border-radius: 50px;
   transition: border-bottom 0.3s ease;
   &:hover {

@@ -50,7 +50,6 @@ const Container2 = styled.div({
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  alignItems: "flex-start",
   width: "100%",
   padding: "10px",
 })
@@ -60,7 +59,6 @@ const Container3 = styled.div({
   display: "flex",
   justifyContent: "center",
   flexDirection: "column",
-  alignItems: "flex-end",
   width: "100%",
   padding: "10px",
 })
@@ -108,7 +106,7 @@ const ContainerTrianguloDireita = styled.div`
     padding: 50px;
     display: flex;
     align-items: flex-end;
-    font-size: 15px;
+    font-size: 20px;
     position: relative;
     color: white;
     overflow: hidden; /* Certifique-se de ocultar partes do triângulo que excedem o contêiner */
@@ -138,15 +136,14 @@ const ContainerTrianguloDireita = styled.div`
 
 const Content = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   color: white;
-  width: 100%;
-  height: 100%;
+  margin: 10px;
+  width: 70%;
+  height: 70%;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   border-radius: 50px;
   padding: 10px;
-  font-size: 35px;
+  font-size: 25px;
   @media (max-width: 768px) {
     width: 90%;
     font-size: 25px;
@@ -300,10 +297,9 @@ const Parte1 = () => {
           </ContainerV>
 
       <Container1>
-        <Container2>
           <Content>
             <ul>
-              <li><Amarelo>Missçao inspiradora </Amarelo>, Transformar vidas oferecendo educação de qualidade e desenvolvimento tecnológico a crianças de comunidades carentes.</li>
+              <li><Amarelo>Missão inspiradora </Amarelo>, Transformar vidas oferecendo educação de qualidade e desenvolvimento tecnológico a crianças de comunidades carentes.</li>
               <br></br>
               <li><Amarelo> FOCO EM TECNOLOGIA</Amarelo> Programas inovadores ensinam programação e robótica, preparando os alunos para o mundo moderno.</li>
               <br></br>
@@ -315,8 +311,6 @@ const Parte1 = () => {
               <br></br>
             </ul>
           </Content>
-        </Container2>
-       
       </Container1>
       <Titulo>Por que nossos cursos!</Titulo>
       <Titulo2>Front-end </Titulo2>

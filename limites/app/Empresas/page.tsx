@@ -14,10 +14,11 @@ const Container = styled.body({
     padding: "0px",
     margin: "0px",
     border: "none",
-    backgroundImage: `url('5.png')`,
+    backgroundImage: `url('2.png')`,
     backgroundSize: "cover", 
     backgroundPosition: "center", 
     backgroundRepeat: "no-repeat", 
+
   });
 
   const ContainerV = styled.div({

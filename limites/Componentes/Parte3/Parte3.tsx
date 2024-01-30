@@ -73,7 +73,7 @@ const Content = styled.div`
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   border-radius: 50px;
   padding: 10px;
-  font-size: 40px;
+  font-size: 30px;
   margin: 50px;
 
   @media (max-width: 768px) {

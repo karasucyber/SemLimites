@@ -11,7 +11,7 @@ const Container = styled.div({
   alignItems: "center",
   height: "100%",
   width: "100%",
-  backgroundImage: `url('Design sem nome (4).png')`,
+  backgroundImage: `url('500.png')`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",

@@ -18,7 +18,7 @@ const Container = styled.div({
   width: "100%",
   background: "black",
   color: "white",
-  backgroundImage: `url('19.png')`,
+  backgroundImage: `url('502.png')`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -28,10 +28,24 @@ const Container = styled.div({
     flexDirection: "column",
     alignItems: "center",
     backgroundImage: `url('.png')`,
-
   },
 });
 
+const Container2 = styled.div({
+  display: "flex",
+  height: "100%",
+  width: "100%",
+  background: "black",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  '@media (max-width: 758px)': {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+});
 
 const ContainerRight = styled.div({
   color: "white",
@@ -41,6 +55,7 @@ const ContainerRight = styled.div({
   alignItems: "flex-start",
   width: "100%",
   height: "100%",
+  padding: "20px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -69,7 +84,7 @@ const ContainerLeft2 = styled.div({
   justifyItems: "center",
   flexDirection: "column",
   justifyContent: "flex-start",
-  width: "90%",
+  width: "100%",
   height: "100%",
   '@media (max-width: 758px)': {
     display: "flex",
@@ -84,6 +99,7 @@ const ContainerLeft2 = styled.div({
 const StyledButton = styled.div({
   fontSize: "30px",
   color: "white",
+  textDecoration: "none",
 })
 
 
@@ -125,7 +141,6 @@ const ContainerIMG = styled.div({
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-
   },
 });
 
@@ -141,13 +156,11 @@ const Content = styled.div`
   padding: 10px;
   font-size: 40px;
   margin: 50px;
-
   @media (max-width: 768px) {
     width: 80%;
     font-size: 30px;
     margin: 30px;
   }
-
   @media (max-width: 480px) {
     width: 90%;
     font-size: 20px;
@@ -155,18 +168,15 @@ const Content = styled.div`
   }
 `;
 
-
-
-
 const Footer = () => {
   return (
     <>
      <FooterCarousel></FooterCarousel>
       <Container>
-        <ContainerRight>
-          <h1><Amarelo href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
-          <h1><Amarelo href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>
-          <h1><Amarelo href=""><MdOutlineAttachEmail /></Amarelo> contato@semlimitesed.tech </h1>
+       <ContainerRight>
+          <h1><Amarelo href=""><FaWhatsapp/></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
+          <h1><Amarelo href=""><CiInstagram/></Amarelo> @semlimitesed.tech </h1>
+          <h1><Amarelo href=""><MdOutlineAttachEmail/></Amarelo> contato@semlimitesed.tech </h1>
         </ContainerRight>
        <ContainerLeft>
           <ContainerLeft2>
@@ -192,7 +202,8 @@ const Footer = () => {
             </StyledButton>
           </ContainerLeft2>
         </ContainerLeft>         
-      </Container></>
+      </Container>
+      </>
   );
 };
 

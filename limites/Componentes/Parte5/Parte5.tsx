@@ -12,7 +12,7 @@ const Container = styled.div`
   align-items: center;
   height: 1000px;
   width: 1400px;
-  background-image: url('6.png');
+  background-image: url('5.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ const ContainerNumber = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 15px;
   width: 100%;
   color: white;
   flex-direction: column;
