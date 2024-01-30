@@ -163,7 +163,6 @@ const Footer = () => {
     <>
      <FooterCarousel></FooterCarousel>
       <Container>
-
         <ContainerRight>
           <h1><Amarelo href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
           <h1><Amarelo href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>

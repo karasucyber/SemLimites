@@ -33,7 +33,7 @@ const Parte1 = () => {
     <Container> 
            <ContainerV>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            url="https://www.youtube.com/watch?v=3fDlLEbVJWs"
             width="100%"
             height="400px"/>          
           </ContainerV>

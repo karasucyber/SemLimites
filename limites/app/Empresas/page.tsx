@@ -68,7 +68,7 @@ export default function PageBolsista(){
         <NavBar/>
         <ContainerV>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            url="https://www.youtube.com/watch?v=3fDlLEbVJWs"
             width="80%"
             height="600px"/>          
           </ContainerV>

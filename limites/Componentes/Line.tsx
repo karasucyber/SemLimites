@@ -85,13 +85,12 @@ const FooterCarousel = () => {
     }
   };
 
+  
+
   return (
     <CarouselContainer
       ref={carouselRef}
       onMouseDown={handleDragStart}
-      onMouseUp={handleDragEnd}
-      onMouseMove={handleDragMove}
-      onTouchStart={handleDragStart}
       onTouchEnd={handleDragEnd}
       onTouchMove={handleDragMove}
     >
