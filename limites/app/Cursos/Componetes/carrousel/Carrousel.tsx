@@ -96,7 +96,7 @@ const Container6 = styled.div({
   boxSizing: "border-box"
 });
 
-const Container7 = styled.div({
+const Container7 = styled.a({
   display: "flex",
   justifyContent: "center"
 });
@@ -107,21 +107,23 @@ const Container8 = styled.div({
   width: "40%",
 });
 
-const Button = styled.button({
-  width: "80%",
-  height: "20%",
-  padding:"2px",
-  borderRadius: "10px",
-  background: "black",
-  color: "white"
-});
 
-const Button2 = styled.button({
-  width: "80%",
-  borderRadius: "10px",
-  background: "#d5e528",
-  color: "black",
-});
+
+const Button = styled.button`
+  width: 80%;
+  height: 20%;
+  padding: 2px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+`;
+
+const Button2 = styled.button`
+  width: 80%;
+  border-radius: 10px;
+  background: #d5e528;
+  color: black;
+`;
 
 export const Planos = () => {
   return (
@@ -183,8 +185,8 @@ export const Planos = () => {
               <Container6>
                 <p> Mensalmente</p>
               </Container6>
-              <Container7>
-                <Button2> <FaWhatsapp /> </Button2>
+              <Container7 href="https://wa.me/+551194946-0441">
+                <Button2><FaWhatsapp styled={{withd: "10px", height: "10px",}}/></Button2>
               </Container7>
             </Container1>
           </SwiperSlide>
@@ -223,8 +225,8 @@ export const Planos = () => {
                 <Container6>
                   <p> Mensalmente</p>
                 </Container6>
-                <Container7>
-                  <Button> <FaWhatsapp /> </Button>
+                <Container7 href="https://wa.me/+551194946-0441">
+                  <Button><FaWhatsapp/></Button>
                 </Container7>
               </Container3>
             </Container>
@@ -266,8 +268,8 @@ export const Planos = () => {
                 <Container6>
                   <p> Mensalmente</p>
                 </Container6>
-                <Container7>
-                  <Button> <FaWhatsapp /> </Button>
+                <Container7 href="https://wa.me/+551194946-0441">
+                  <Button><FaWhatsapp/></Button>
                 </Container7>
               </Container3>
             </Container>

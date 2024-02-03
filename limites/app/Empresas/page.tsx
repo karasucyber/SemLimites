@@ -24,7 +24,7 @@ const Container = styled.body({
   const ContainerV = styled.div({
     display: "flex",
     justifyContent: 'center',
-    height: "800px",
+    height: "500px",
     width: "1100px",
     padding: "10px",
     '@media (max-width: 758px)': {
