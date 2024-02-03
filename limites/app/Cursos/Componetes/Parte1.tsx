@@ -291,7 +291,7 @@ const Parte1 = () => {
       <Titulo>Por que nossos cursos!</Titulo>
       <ContainerV>
       <ReactPlayer
-            url="https://www.youtube.com/watch?v=3fDlLEbVJWs"
+            url="https://www.youtube.com/watch?v=5-nZIGFYF_A&feature=youtu.be"
             width="80%"
             height="600px"/>          
           </ContainerV>

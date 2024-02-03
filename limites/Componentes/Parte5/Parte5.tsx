@@ -4,6 +4,8 @@ import ReactPlayer from 'react-player';
 import { AiFillBook, AiFillEdit, AiFillShopping, AiFillHome } from "react-icons/ai";
 import { PiStudentBold } from "react-icons/pi";
 import Line2 from "../Line";
+import { useInView } from 'react-intersection-observer'; // Importe o hook useInView
+
 
 const Container = styled.div`
   display: flex;
@@ -124,10 +126,15 @@ const CustomCounter: React.FC<{ initialValue: number; incrementValue: number; ma
   return <span>{counterNumber}</span>;
 };
 
+
+
 const Parte5 = () => {
+    const [ref, inView] = useInView({
+      triggerOnce: true,
+    });
   return (
     <>
-      <Container>
+      <Container ref={ref} className={`fade-in ${inView ? 'visible' : ''}`}>
         <ContainerNumber>
           <Titulo>Você sabia que</Titulo>
           <ContainerN>

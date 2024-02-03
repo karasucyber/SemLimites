@@ -156,9 +156,12 @@ const Parte2 = () => {
 
         <ContainerV>
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+            url="https://www.youtube.com/watch?v=3fDlLEbVJWs"
             width="100%"
-            height="400px"/>          
+            height="400px"
+            style={{
+              boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)",
+            }}/>          
           </ContainerV>
       </ContainerG>
      

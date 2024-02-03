@@ -171,39 +171,50 @@ const Content = styled.div`
 const Footer = () => {
   return (
     <>
-     <FooterCarousel></FooterCarousel>
+      <FooterCarousel></FooterCarousel>
       <Container>
-       <ContainerRight>
-          <h1><Amarelo href=""><FaWhatsapp/></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
-          <h1><Amarelo href=""><CiInstagram/></Amarelo> @semlimitesed.tech </h1>
-          <h1><Amarelo href=""><MdOutlineAttachEmail/></Amarelo> contato@semlimitesed.tech </h1>
+        <ContainerRight>
+          <h1><Amarelo style={{ textDecoration: "none",  }}
+            href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
+          <h1><Amarelo style={{ textDecoration: "none", }}
+            href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>
+          <h1><Amarelo style={{ textDecoration: "none",  }}
+            href=""><MdOutlineAttachEmail /></Amarelo> contato@investesemlimites.com.br</h1>
         </ContainerRight>
-       <ContainerLeft>
+        <ContainerLeft>
           <ContainerLeft2>
-            <Amarelo><h2>Alunos</h2></Amarelo>
+            <h2>Alunos</h2>
             <StyledButton>
-              <a href="/Bolsista"><h6>Bolsista</h6></a>
-              <a href="/Bolsista"><h6>Cadastro</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Bolsista"><h6>Bolsista</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Bolsista"><h6>Cadastro</h6></a>
             </StyledButton>
           </ContainerLeft2>
           <ContainerLeft2>
-            <Amarelo><h2>Empresas</h2></Amarelo>
+            <h2>Empresas</h2>
             <StyledButton>
-              <a href="/Empresas"><h6>Cadastro</h6></a>
-              <a href="/Empresas"><h6>Parceiros</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Empresas"><h6>Cadastro</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Empresas"><h6>Parceiros</h6></a>
             </StyledButton>
           </ContainerLeft2>
           <ContainerLeft2>
-            <Amarelo><h2>Cursos</h2></Amarelo>
+           <h2>Cursos</h2>
             <StyledButton>
-              <a href="/Cursos"><h6>Front-end</h6></a>
-              <a href="/Cursos"><h6>Back-end</h6></a>
-              <a href="/Cursos"><h6>Inglês</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Cursos"><h6>Front-end</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Cursos"><h6>Back-end</h6></a>
+              <a style={{ textDecoration: "none", color: "#D5E528" }}
+                href="/Cursos"><h6>Inglês</h6></a>
             </StyledButton>
           </ContainerLeft2>
-        </ContainerLeft>         
+        </ContainerLeft>
       </Container>
-      </>
+
+    </>
   );
 };
 

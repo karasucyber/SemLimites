@@ -68,13 +68,17 @@ export default function PageBolsista(){
      <Container>
         <NavBar/>
         <ContainerV>
-          <ReactPlayer
-            url="https://www.youtube.com/watch?v=3fDlLEbVJWs"
-            width="80%"
-            height="600px"/>          
+        <ReactPlayer
+  url="https://www.youtube.com/watch?v=5-nZIGFYF_A&feature=youtu.be"
+  width="80%"
+  height="600px"
+  style={{
+    boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)",
+  }}/>
+    
           </ContainerV>
           <StyledContainer>
-        <StyledButton>Google Forms</StyledButton>
+        <StyledButton><a  style={{textDecoration: "none", color: "white"}} href="https://docs.google.com/forms/d/e/1FAIpQLSeHpPZj0eSx87yYFxMfnGKJxJlkPFPKlFrL-I4dHTDkpzZksA/viewform">Google Forms</a></StyledButton>
       </StyledContainer>
         <Footer/> 
     </Container>)
