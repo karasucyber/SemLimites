@@ -134,7 +134,7 @@ const Parte5 = () => {
     });
   return (
     <>
-      <Container ref={ref} className={`fade-in ${inView ? 'visible' : ''}`}>
+      <Container>
         <ContainerNumber>
           <Titulo>Você sabia que</Titulo>
           <ContainerN>

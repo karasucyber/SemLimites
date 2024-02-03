@@ -26,7 +26,7 @@ const Container = styled.div`
     animation: ${borderAnimation} 1.5s infinite; /* Adiciona a animação no hover */
     border-bottom-color: darkgray;}
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
     height: 100%;
     padding: 10px;
     margin: 10px;
@@ -75,7 +75,6 @@ const ContainerBar1 = styled.div`
   width: 80%;
   height: 70%;
   display: flex;
-
   border-radius: 10px;
 
 `;
@@ -89,9 +88,13 @@ const ContainerIMG = styled.div({
   width: "150px",
   height: "50px",
   '@media (max-width: 758px)': {
-
-      width: "500px",
-      height: "400px",
+    width: "40px",
+    height: "40px",
+  backgroundImage: `url('Design sem nome (3) (1).png')`,
+    backgroundSize: "cover", 
+    backgroundPosition: "center", 
+    backgroundRepeat: "no-repeat", 
+ 
 
     },
 });
