@@ -64,11 +64,47 @@ const Container = styled.body({
     );
   };
   
+  const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
+  border-radius: 50px;
+  padding: 10px;
+  font-size: 30px;
+  margin: 50px;
+  box-shadow: 0 8px 16px rgba(213, 229, 40, 0.8);
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 600px;
+    font-size: 25px;
+  }
+`;
+
   
 export default function PageBolsista(){
     return(
      <Container>
         <NavBar/>
+
+<Content>
+          <ul>
+              <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
+              <br></br>
+              <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
+              <br></br>
+              <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
+              <br></br>
+              <li>INGLÊS COMO SEGUNDO IDIOMA</li>
+              <br></br>
+              <li>JOVENS PERIFÉRICOS</li>
+              <br></br>
+              <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
+          </ul>
+     </Content>
         <ContainerV>
         <ReactPlayer
   url="https://www.youtube.com/watch?v=5-nZIGFYF_A&feature=youtu.be"
