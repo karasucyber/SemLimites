@@ -32,6 +32,8 @@ const Container = styled.body({
       justifyContent: "center",
       flexDirection: "column",
       alignItems: "center",
+         height: "650px",
+    width: "100%",
   
     },
   });
@@ -71,7 +73,7 @@ export default function PageBolsista(){
         <ReactPlayer
   url="https://www.youtube.com/watch?v=dCF9wvpQ5wQ&feature=youtu.be"
   width="80%"
-  height="600px"
+  height="80%"
   style={{
     boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)",
   }}/>

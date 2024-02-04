@@ -85,6 +85,7 @@ const Content = styled.div`
 
   @media (max-width: 480px) {
     width: 90%;
+    height: 50%;
     font-size: 20px;
     margin: 20px;
   }

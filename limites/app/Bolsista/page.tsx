@@ -32,6 +32,8 @@ const Container = styled.body({
       justifyContent: "center",
       flexDirection: "column",
       alignItems: "center",
+      height: "650px",
+      width: "100%",
   
     },
   });

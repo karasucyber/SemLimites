@@ -40,6 +40,8 @@ const Titulo = styled.div({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+      fontSize: "50px",
+
   },
 });
 
@@ -124,6 +126,8 @@ const Titulo1 = styled.h1({
   fontSize: "20px",
   padding: "10px",
   '@media (max-width: 758px)': {
+    fontSize: "25px",
+
 
   },
 
@@ -132,6 +136,7 @@ const Titulo1 = styled.h1({
 const Paragrafo = styled.p({
   fontSize: "30px",
   '@media (max-width: 758px)': {
+    fontSize: "20px",
 
   },
 })

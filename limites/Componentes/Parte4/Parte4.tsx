@@ -7,7 +7,7 @@ import ReactPlayer from "react-player";
 import Line2 from '../Line';
 
 const Container = styled.div({
-  width: "1400px",
+  width: "12  00px",
   height: "1000px",
 
   backgroundImage: `url('2.png')`,
@@ -15,8 +15,8 @@ const Container = styled.div({
   backgroundPosition: "center", 
   backgroundRepeat: "no-repeat", 
   '@media (max-width: 758px)': {
-    width: "650px",
-    height: "650px",
+    width: "600px",
+    height: "600px",
 
     
   },
