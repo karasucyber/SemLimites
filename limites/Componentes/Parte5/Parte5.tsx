@@ -37,6 +37,8 @@ const Titulo = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size: 40px;
+
   }
 `;
 
@@ -73,7 +75,6 @@ const Titulo1 = styled.h1`
   padding: 10px;
 
   @media (max-width: 758px) {
-    /* Adjustments for smaller screens */
   }
 `;
 
@@ -99,7 +100,6 @@ const ContainerNumber = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 10px;
   }
 `;
 

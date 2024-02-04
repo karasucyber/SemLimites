@@ -39,7 +39,7 @@ const Titulo = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        fontSize: "45px",
+        fontSize: "30px",
       },
 
 });
@@ -76,14 +76,8 @@ const Content = styled.div`
   font-size: 40px;
   margin: 50px;
   @media (max-width: 768px) {
-    width: 80%;
-    font-size: 30px;
-    margin: 30px;
-  }
-  @media (max-width: 480px) {
-    width: 90%;
-    font-size: 20px;
-    margin: 20px;
+    width: 100%;
+    height: 100%;
   }
 `;
 
