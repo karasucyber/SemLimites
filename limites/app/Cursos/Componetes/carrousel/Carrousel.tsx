@@ -33,7 +33,7 @@ const ContainerG = styled.div({
 
 const Container = styled.div({
   height: "100%",
-  width: "350px",
+  width: "300px",
   background: "white",
   borderRadius: "30px",
   border: "5px solid #d5e528" // Adiciona borda de cor amarelo limão

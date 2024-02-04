@@ -18,8 +18,15 @@
 
 .swiper-slide {
   width: 22rem;
-  height: 37rem;
+  height: 35rem;
   padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 18rem;
+    height: 35rem;
+  }
 }
 
 
