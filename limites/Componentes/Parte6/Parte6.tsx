@@ -32,7 +32,6 @@ const Titulo = styled.div({
     justifyContent: "center",
     fontSize: "50px",   
     color: "#D5E528",
-    padding: "10px",
     margin: "100px",
     '@media (max-width: 758px)': {
         display: "flex",
@@ -58,7 +57,7 @@ const ContainerIMG = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        width: "500px",
+        width: "400px",
         height: "400px",
       },
 });
@@ -71,10 +70,6 @@ const Content = styled.div`
   width: 50%;
   height: 100%;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
-  border-radius: 50px;
-  padding: 10px;
-  font-size: 40px;
-  margin: 50px;
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;

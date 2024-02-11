@@ -34,10 +34,11 @@ const Titulo = styled.div({
   fontSize: "60px",
   color: "#D5E528",
   '@media (max-width: 758px)': {
+    marginBottom: "5px",
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    fontSize: "50px",
+    fontSize: "40px",
   },
 });
 
@@ -104,12 +105,14 @@ const ContainerIcons = styled.span({
   fontSize: "50px",
 });
 
-const Titulo1 = styled.h1({
-  fontSize: "20px",
-});
+
 
 const Paragrafo = styled.p({
   fontSize: "30px",
+  '@media (max-width: 758px)': {
+    fontSize: "30px",
+
+  },
 });
 
 
