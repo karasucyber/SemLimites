@@ -22,8 +22,8 @@ const Container = styled.div({
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
   '@media (max-width: 758px)': {
-    height: "1000px",
-    width: "400px",
+    height: "1200px",
+    width: "350px",
     backgroundImage: `url('.png')`,
   },
 });
@@ -38,7 +38,7 @@ const Titulo = styled.div({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    fontSize: "40px",
+    fontSize: "30px",
   },
 });
 
@@ -110,7 +110,7 @@ const ContainerIcons = styled.span({
 const Paragrafo = styled.p({
   fontSize: "30px",
   '@media (max-width: 758px)': {
-    fontSize: "30px",
+    fontSize: "25px",
 
   },
 });
