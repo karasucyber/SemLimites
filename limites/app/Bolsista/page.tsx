@@ -50,6 +50,8 @@ const Container = styled.body({
   width: 50%;
   height: 100%;
   border-radius: 20px;
+  font-size: 30px;
+  padding: 10px;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
   @media (max-width: 768px) {
     width: 350px;

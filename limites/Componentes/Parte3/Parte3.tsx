@@ -77,7 +77,7 @@ const Content = styled.div`
   margin: 50px;
 
   @media (max-width: 768px) {
-    width:  380px;
+    width:  360px;
     height: 400px;
     font-size: 18px;
   }
