@@ -10,14 +10,13 @@ import { Line } from "three";
 import  { keyframes } from "styled-components";
 import Line2 from "../Line";
 
-
 const Container = styled.div({
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   height: "900px",
-  width: "1400px  ",
+  width: "1400px",
   backgroundImage: `url('1.png')`,
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -26,7 +25,6 @@ const Container = styled.div({
     height: "1000px",
     width: "400px",
     backgroundImage: `url('.png')`,
-
   },
 });
 
@@ -35,13 +33,11 @@ const Titulo = styled.div({
   justifyContent: "center",
   fontSize: "60px",
   color: "#D5E528",
-  padding: "10px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-      fontSize: "50px",
-
+    fontSize: "50px",
   },
 });
 
@@ -51,7 +47,6 @@ const ContainerG = styled.div({
   alignItems: "center",
   height: "100%",
   width: "98%",
-  padding: "10px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -66,7 +61,6 @@ const ContainerT = styled.div({
   width: "99%",
   justifyContent: 'center',
   color: "white",
-  padding: "10px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -79,19 +73,15 @@ const ContainerV = styled.div({
   justifyContent: 'center',
   height: "50%",
   width: "99%",
-  padding: "10px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
     height: "600px",
-  width: "100%",
-
+    width: "100%",
   },
 });
-
-
 
 const ContainerDireita = styled.div({
   color: "white",
@@ -101,47 +91,27 @@ const ContainerDireita = styled.div({
   alignItems: "flex-start",
   height: "100%",
   width: "60%",
-  padding: "10px",
   '@media (max-width: 758px)': {
     width: "100%",
   },
-
-})
+});
 
 const Amarelo = styled.a({
   color: "#D5E528",
-  '@media (max-width: 758px)': {
-
-  },
-})
+});
 
 const ContainerIcons = styled.span({
-  padding: "10px",
   fontSize: "50px",
-  '@media (max-width: 758px)': {
-
-
-  },
-})
+});
 
 const Titulo1 = styled.h1({
   fontSize: "20px",
-  padding: "10px",
-  '@media (max-width: 758px)': {
-    fontSize: "25px",
-
-
-  },
-
-})
+});
 
 const Paragrafo = styled.p({
   fontSize: "30px",
-  '@media (max-width: 758px)': {
-    fontSize: "20px",
+});
 
-  },
-})
 
 
 

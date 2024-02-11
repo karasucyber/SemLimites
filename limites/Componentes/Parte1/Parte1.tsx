@@ -66,7 +66,6 @@ const Content = styled.div`
 
 const ContainerT = styled.div`
   font-size: 35px;
-  padding: 5px;
   color: #D5E528;
 
   @media (max-width: 768px) {
@@ -78,17 +77,14 @@ const ContainerT = styled.div`
 
 const ContainerSubT = styled.div`
   font-size: 25px;
-  padding: 5px;
 
   @media (max-width: 768px) {
     font-size: 15px;
-    padding: 5px;
   }
 `;
 
 const ContainerB = styled.div`
   font-size: 35px;
-  padding: 5px;
 
   @media (max-width: 768px) {
   }
@@ -105,7 +101,6 @@ const Button1 = styled.button`
   width: 150px;
   height: 50px;
   font-size: 18px;
-  margin: 10px;
   border-color: white;
   @media (max-width: 768px) {
     /* Add empty styles or adjustments specific for smaller screens */
@@ -134,18 +129,6 @@ const Amarelo = styled.a`
     /* Add empty styles or adjustments specific for smaller screens */
   }
 `;
-
-
-
-/*   <VideoBackground
-        url="/sem limites projeto (1).mp4"
-        playing
-        loop
-        muted
-        width="100%"
-        height="100%"
-        background=""
-      />*/
 
 export const Parte1 = () => {
   return (

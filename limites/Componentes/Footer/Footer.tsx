@@ -55,7 +55,6 @@ const ContainerRight = styled.div({
   alignItems: "flex-start",
   width: "100%",
   height: "100%",
-  padding: "20px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -70,7 +69,6 @@ const ContainerLeft = styled.div({
   justifyContent: "space-between",
   width: "40%",
   height: "100%",
-  padding: "10px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
@@ -92,32 +90,25 @@ const ContainerLeft2 = styled.div({
     flexDirection: "column",
     alignItems: "center",
   },
-})
-
-
+});
 
 const StyledButton = styled.div({
   fontSize: "30px",
   color: "white",
   textDecoration: "none",
-})
-
-
+});
 
 const Titulo = styled.div({
   display: "flex",
   justifyContent: "center",
   fontSize: "50px",
   color: "#D5E528",
-  padding: "10px",
-  margin: "100px",
   '@media (max-width: 758px)': {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
     fontSize: "45px"
-
   },
 });
 
@@ -167,6 +158,7 @@ const Content = styled.div`
     margin: 20px;
   }
 `;
+
 
 const Footer = () => {
   return (

@@ -22,7 +22,6 @@ const fontFace = 'Fjalla One';
 const fontColor = '#2A293E';  // Keep the original font color
 
 
-// Styled components
 const ContactUs = styled.div`
   background: ${formBg};
   padding: 50px 100px;
