@@ -21,29 +21,14 @@ const Container = styled.body({
     backgroundRepeat: "no-repeat", 
   });
 
-  const ContainerV = styled.div({
-    display: "flex",
-    justifyContent: 'center',
-    height: "500px",
-    width: "1100px",
-    padding: "10px",
-    '@media (max-width: 758px)': {
-      display: "flex",
-      justifyContent: "center",
-      flexDirection: "column",
-      alignItems: "center",
-      height: "650px",
-      width: "100%",
-  
-    },
-  });
+
 
   
   const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 20vh;
     color: white;
   `;
   
@@ -56,14 +41,7 @@ const Container = styled.body({
     cursor: pointer;
   `;
   
-  const GoogleFormsButton = () => {
-    return (
-      <StyledContainer>
-        <StyledButton>Google Forms</StyledButton>
-      </StyledContainer>
-    );
-  };
-  
+
   const Content = styled.div`
   display: flex;
   flex-direction: column;
@@ -71,16 +49,11 @@ const Container = styled.body({
   color: white;
   width: 50%;
   height: 100%;
+  border-radius: 20px;
   background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
-  border-radius: 50px;
-  padding: 10px;
-  font-size: 30px;
-  margin: 50px;
-  box-shadow: 0 8px 16px rgba(213, 229, 40, 0.8);
   @media (max-width: 768px) {
-    width: 100%;
-    height: 600px;
-    font-size: 25px;
+    width: 350px;
+    height: 100%;
   }
 `;
 
