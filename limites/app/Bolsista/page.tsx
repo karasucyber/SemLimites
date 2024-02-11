@@ -89,14 +89,9 @@ export default function PageBolsista(){
     return(
      <Container>
         <NavBar/>
-
-<Content>
+     <Content>
           <ul>
-              <li>ESTRUTURA ESG RÁPIDA, ADAPTÁVEL COM BAIXO CUSTO</li>
-              <br></br>
-              <li>CURSOS + MÃO NA MASSA COM - TEORIA</li>
-              <br></br>
-              <li>CURSOS DE CURTA DURAÇÃO (10 MESES)</li>
+              <li>JOVENS DE 18 Á 35 ANOS</li>
               <br></br>
               <li>INGLÊS COMO SEGUNDO IDIOMA</li>
               <br></br>
@@ -105,15 +100,6 @@ export default function PageBolsista(){
               <li>IMIGRANTES EM VULNERABILIDADE SOCIAL</li>
           </ul>
      </Content>
-        <ContainerV>
-        <ReactPlayer
-  url="https://www.youtube.com/watch?v=5-nZIGFYF_A&feature=youtu.be"
-  width="80%"
-  height="600px"
-  style={{ boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)" }}
-/>
-
-          </ContainerV>
           <StyledContainer>
         <StyledButton><a style={{textDecoration: "none", color: "white"}} href="https://forms.gle/MYDpiSUkYBJLQj5Y6">Google Forms</a> </StyledButton>
       </StyledContainer>

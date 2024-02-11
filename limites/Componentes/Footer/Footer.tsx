@@ -175,7 +175,7 @@ const Footer = () => {
       <Container>
         <ContainerRight>
           <h1><Amarelo style={{ textDecoration: "none",  }}
-            href=""><FaWhatsapp /></Amarelo> (11)94946-0441 / (45) 99970-2965</h1>
+            href=""><FaWhatsapp /></Amarelo> (11)94946-0441</h1>
           <h1><Amarelo style={{ textDecoration: "none", }}
             href=""><CiInstagram /></Amarelo> @semlimitesed.tech </h1>
           <h1><Amarelo style={{ textDecoration: "none",  }}

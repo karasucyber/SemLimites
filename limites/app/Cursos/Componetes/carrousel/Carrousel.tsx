@@ -107,8 +107,6 @@ const Container8 = styled.div({
   width: "40%",
 });
 
-
-
 const Button = styled.button`
   width: 80%;
   height: 20%;
@@ -149,7 +147,7 @@ export const Planos = () => {
           pagination={true}
           modules={[EffectCoverflow, Navigation]}
           className="swiper"
-          style={{ maxWidth: '800px', margin: '0 auto' }} // Adicionei um estilo para limitar a largura do Swiper
+          style={{ maxWidth: '600px', margin: '0 auto' }} // Adicionei um estilo para limitar a largura do Swiper
         >
           <SwiperSlide>
             <Container1>

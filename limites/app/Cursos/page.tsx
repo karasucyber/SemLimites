@@ -29,7 +29,6 @@ export default function PageCursos(){
     return(
         <Container> 
              <Parte1/>
-             <Planos/>
             <Footer/>
         </Container>
     )}

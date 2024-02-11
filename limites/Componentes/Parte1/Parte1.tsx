@@ -107,7 +107,6 @@ const Button1 = styled.button`
   font-size: 18px;
   margin: 10px;
   border-color: white;
-
   @media (max-width: 768px) {
     /* Add empty styles or adjustments specific for smaller screens */
   }
@@ -166,8 +165,8 @@ export const Parte1 = () => {
             </h2>
           </ContainerSubT>
           <ContainerB>
-            <Button1> Inscreva-se</Button1>
-            <Button2> Contatos </Button2>
+            <Button1 > <a style={{textDecoration: "none", color: "black"}} href="https://api.whatsapp.com/send/?phone=%2B5511949460441&text&type=phone_number&app_absent=0"> Inscreva-se</a></Button1>
+            <Button2> <a style={{textDecoration: "none", color:"white"}} href="https://api.whatsapp.com/send/?phone=%2B5511949460441&text&type=phone_number&app_absent=0">  Contatos</a></Button2>
           </ContainerB>
         </Content>
       </ContainerTransp>
