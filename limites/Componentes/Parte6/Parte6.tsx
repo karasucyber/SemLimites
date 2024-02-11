@@ -38,7 +38,7 @@ const Titulo = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        fontSize: "px",
+        fontSize: "40px",
       },
 
 });
@@ -62,19 +62,6 @@ const ContainerIMG = styled.div({
       },
 });
 
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  color: white;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(235, 235, 235, 0.5), rgba(137, 137, 137, 0.5));
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 100%;
-  }
-`;
 
 
 export const Parte6 = () => {

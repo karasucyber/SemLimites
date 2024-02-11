@@ -79,7 +79,7 @@ const Titulo1 = styled.h1`
 `;
 
 const Paragrafo = styled.p`
-  font-size: 30px;
+  font-size: 25px;
 
   @media (max-width: 758px) {
     /* Adjustments for smaller screens */
@@ -140,7 +140,7 @@ const Parte5 = () => {
           <ContainerN>
         <h1>
           <ContainerIcons><AiFillShopping /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={25} maxLimit={130000} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
+          <span><CustomCounter initialValue={50} incrementValue={25} maxLimit={130} /></span><Amarelo>M</Amarelo>De <Amarelo>desempregados</Amarelo> no Brasil
         </h1>
       </ContainerN>
 
@@ -154,7 +154,7 @@ const Parte5 = () => {
       <ContainerN>
         <h1>
           <ContainerIcons><AiFillEdit /></ContainerIcons>
-          <span><CustomCounter initialValue={50} incrementValue={10} maxLimit={100000} /></span><Amarelo>M</Amarelo> De<Amarelo>progamadores</Amarelo> serão necessários no Brasil até 2025
+          <span><CustomCounter initialValue={50} incrementValue={10} maxLimit={10} /></span><Amarelo>M</Amarelo> De<Amarelo>progamadores</Amarelo> serão necessários no Brasil até 2025
         </h1>
       </ContainerN>
 

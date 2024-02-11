@@ -37,7 +37,7 @@ const Titulo = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        fontSize: "45px"
+        fontSize: "40px",
        
       },
 

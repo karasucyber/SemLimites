@@ -20,7 +20,7 @@ const Container = styled.div({
     width: "100%",
     flexDirection: "column",
     backgroundImage: `url('500.png')`,
-
+    padding: "15px",
   },
 })
 
