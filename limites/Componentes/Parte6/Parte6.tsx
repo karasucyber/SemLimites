@@ -38,7 +38,7 @@ const Titulo = styled.div({
         justifyContent: "center",
         flexDirection: "column",
         alignItems: "center",
-        fontSize: "30px",
+        fontSize: "px",
       },
 
 });
@@ -80,7 +80,7 @@ const Content = styled.div`
 export const Parte6 = () => {
     return(<> 
      <Container> 
-        <Titulo> Problemas que solucionamos !!!</Titulo>
+        <Titulo>Nos solucionamos!</Titulo>
         <ContainerIMG> 
         </ContainerIMG>
      </Container>

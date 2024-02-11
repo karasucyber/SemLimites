@@ -38,7 +38,7 @@ const Titulo = styled.div({
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
-    fontSize: "30px",
+    fontSize: "40px",
   },
 });
 
@@ -122,7 +122,6 @@ const Paragrafo = styled.p({
 const Parte2 = () => {
   return (
     <Container>
-      <Titulo>Quem somos</Titulo>
       <ContainerG>
         <ContainerT>
           <ContainerDireita>

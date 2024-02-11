@@ -20,7 +20,7 @@ const Container = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 758px) {
-    height: 1700px;
+    height: 1300px;
     width: 300px;
     background-image: url('.png');
   }
