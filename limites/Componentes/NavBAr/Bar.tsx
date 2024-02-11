@@ -26,7 +26,7 @@ const Container = styled.div`
     animation: ${borderAnimation} 1.5s infinite; /* Adiciona a animação no hover */
     border-bottom-color: darkgray;}
   @media (max-width: 768px) {
-    width: 100%;
+    width: 500px;
     height: 100%;
     padding: 10px;
     margin: 10px;
@@ -50,12 +50,10 @@ padding: 10px;
     background: rgba(255, 255, 255, 250 ); // Branco parcialmente transparente ao passar o mouse
   }
   @media (max-width: 768px) {
-    width: 100%;
+    width: 500px;
     height: 100%;
     padding: 10px;
     font-size: 15px;
-
-    
 
   }
 `;
