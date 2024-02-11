@@ -56,6 +56,8 @@ const Container = styled.body({
   @media (max-width: 768px) {
     width: 350px;
     height: 100%;
+    font-size: 20px;
+
   }
 `;
 

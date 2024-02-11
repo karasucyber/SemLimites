@@ -8,7 +8,7 @@ const Container = styled.div({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    height: "1200 px",
+    height: "100%",
     width: "1400px",
     color: "white",
     backgroundImage: `url('1.png')`,
@@ -74,12 +74,14 @@ const Content = styled.div`
   border-radius: 50px;
   padding: 10px;
   font-size: 30px;
-  margin: 50px;
+  marin: 50px;
 
   @media (max-width: 768px) {
     width:  360px;
     height: 400px;
     font-size: 18px;
+    marin: 10px;
+
   }
 `;
 
