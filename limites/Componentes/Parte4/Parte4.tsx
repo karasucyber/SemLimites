@@ -73,6 +73,8 @@ function Model(props: ModelProps) {
               <StyledImage src="F1.png"  />
               </div>
               <div className="wrapper" >
+              <StyledImage src="F1.png"  />
+
               </div>
             </Html>
           </mesh>
