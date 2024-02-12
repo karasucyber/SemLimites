@@ -62,17 +62,16 @@ function Model(props: ModelProps) {
   });
 
   return (
-    <group ref={group} {...props} dispose={null}>
+<group ref={group} {...props} dispose={null}>
       <group rotation-x={-0.425} position={[0, -0.04, 0.41]}>
-        <group position={[0, 3, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
+        <group position={[0, 2.96, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
-            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, 0.01]} transform occlude>
+            <Html className="content" rotation-x={-Math.PI / 2} position={[-0.5, 0.05, -0.09]} transform occlude>
+            <StyledImage src="test4.png"  />
+              <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}></div>
               <div className="wrapper" >
-              <ImageContainer>
-      <StyledImage src="test4.png"  />
-    </ImageContainer>
               </div>
             </Html>
           </mesh>
