@@ -71,7 +71,7 @@ function Model(props: ModelProps) {
             <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, 0.01]} transform occlude>
               <div className="wrapper" >
               <ImageContainer>
-      <StyledImage src="test1.png"  />
+      <StyledImage src="test4.png"  />
     </ImageContainer>
               </div>
             </Html>
