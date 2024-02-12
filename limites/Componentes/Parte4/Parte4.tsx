@@ -5,6 +5,9 @@ import { Html, Environment, useGLTF, ContactShadows, OrbitControls, Center } fro
 import styled from 'styled-components';
 import "./styles.css";
 import NavBar from '../NavBAr/Bar';
+import Parte2 from '../Parte2/Parte2';
+import Parte3 from '../Parte3/Parte3';
+import ReactPlayer from 'react-player';
 
 const Container = styled.div({
   width: "1400px",
@@ -71,12 +74,14 @@ function Model(props: ModelProps) {
           <mesh geometry={nodes['Cube008_2'].geometry}>
             <Html className="content" rotation-x={-Math.PI / 2} position={[-0.5, 0.05, -0.09]} transform occlude>          
          <div className='Center'>
-          <NavBar></NavBar>
-         </div>
-         <div className='Center'>
-         <h1 style={{  color: "#D5E528", alignItems: "center", width: "100%"}}> Nossa galeria </h1>
-         </div>
-         
+         <ReactPlayer
+            url="https://www.youtube.com/shorts/gU5FwDfNyLo"
+            width="100%"
+            height="400px"
+            style={{
+              boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)",
+            }}/>   
+         </div>     
               <div className="wrapper" >
               <StyledImage src="c1.png"  />
                <StyledImage src="c2.png"  />
