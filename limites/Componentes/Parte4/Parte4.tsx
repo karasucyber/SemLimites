@@ -1,9 +1,10 @@
 import * as THREE from 'three';
 import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
+import { Html, Environment, useGLTF, ContactShadows, OrbitControls, Center } from '@react-three/drei';
 import styled from 'styled-components';
 import "./styles.css";
+import NavBar from '../NavBAr/Bar';
 
 const Container = styled.div({
   width: "1400px",
@@ -69,6 +70,13 @@ function Model(props: ModelProps) {
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
             <Html className="content" rotation-x={-Math.PI / 2} position={[-0.5, 0.05, -0.09]} transform occlude>          
+         <div className='Center'>
+          <NavBar></NavBar>
+         </div>
+         <div className='Center'>
+         <h1 style={{  color: "#D5E528", alignItems: "center", width: "100%"}}> Nossa galeria </h1>
+         </div>
+         
               <div className="wrapper" >
               <StyledImage src="c1.png"  />
                <StyledImage src="c2.png"  />
