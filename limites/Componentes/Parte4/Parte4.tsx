@@ -76,8 +76,8 @@ function Model(props: ModelProps) {
          <div className='Center'>
          <ReactPlayer
             url="https://www.youtube.com/shorts/gU5FwDfNyLo"
-            width="100%"
-            height="400px"
+            width="250px"
+            height="250px"
             style={{
               boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)",
             }}/>   
