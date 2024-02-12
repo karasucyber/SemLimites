@@ -25,14 +25,13 @@
 /* Media query para telas menores */
 @media screen and (max-width: 780px) {
   .content {
-    width: 100%;
+    width: 50%;
     height: 210px;
     background: #f0f0f0;
     overflow-y: auto;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 180px;
     margin-top: 25px;
-
   }
   .wrapper {
     padding: 10px;
