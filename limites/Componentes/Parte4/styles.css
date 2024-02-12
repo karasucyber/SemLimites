@@ -9,7 +9,7 @@
 .content {
   width: 330px;
   height: 210px;
-  background: #f0f0f0;
+  background: black;
   border-radius: 3px;
   overflow-y: auto;
   left: 10px;
@@ -27,7 +27,7 @@
   .content {
     width: 50%;
     height: 210px;
-    background: #f0f0f0;
+    background: black;
     overflow-y: auto;
     padding: 10px;
     margin-left: 180px;
@@ -38,8 +38,5 @@
     width: 100%;
     height: 100%;
     transform: scale(0.5);
-    display: flex;
-    justify-content: center; /* Centralizando horizontalmente */
-    align-items: center; /* Centralizando verticalmente */
   }
 }

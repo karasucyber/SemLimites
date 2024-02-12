@@ -69,12 +69,11 @@ function Model(props: ModelProps) {
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
             <Html className="content" rotation-x={-Math.PI / 2} position={[-0.5, 0.05, -0.09]} transform occlude>          
-              <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-              <StyledImage src="F1.png"  />
-              </div>
               <div className="wrapper" >
-              <StyledImage src="F1.png"  />
-
+              <StyledImage src="c1.png"  />
+               <StyledImage src="c2.png"  />
+              <StyledImage src="c3.png"  />
+              <StyledImage src="c4.png"  />
               </div>
             </Html>
           </mesh>
