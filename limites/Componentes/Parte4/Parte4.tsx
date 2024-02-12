@@ -3,8 +3,7 @@ import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Html, Environment, useGLTF, ContactShadows, OrbitControls } from '@react-three/drei';
 import styled from 'styled-components';
-import ReactPlayer from "react-player";
-import Line2 from '../Line';
+import "./styles.css";
 
 const Container = styled.div({
   width: "1400px",
@@ -70,12 +69,10 @@ function Model(props: ModelProps) {
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
             <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, 0.01]} transform occlude>
-              <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
+              <div className="wrapper" >
               <ImageContainer>
-      <StyledImage src="Design sem nome.png"  />
+      <StyledImage src="test1.png"  />
     </ImageContainer>
-
-
               </div>
             </Html>
           </mesh>
