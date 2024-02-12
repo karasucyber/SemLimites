@@ -68,9 +68,14 @@ function Model(props: ModelProps) {
           <mesh material={materials.aluminium} geometry={nodes['Cube008'].geometry} />
           <mesh material={materials['matte.001']} geometry={nodes['Cube008_1'].geometry} />
           <mesh geometry={nodes['Cube008_2'].geometry}>
-            <Html className="content" rotation-x={-Math.PI / 2} position={[-0.5, 0.05, -0.09]} transform occlude>
+            <Html className="content" rotation-x={-Math.PI / 2} position={[-0.5, 0.05, -0.09]} transform occlude>          
             <StyledImage src="test4.png"  />
-              <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}></div>
+
+              <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
+              </div>
+              <StyledImage src="test4.png"  />
+
+
               <div className="wrapper" >
               </div>
             </Html>
