@@ -3,9 +3,6 @@
 * {
   box-sizing: border-box;
 }
-
-
-
 .content {
   width: 330px;
   height: 210px;
@@ -14,15 +11,12 @@
   overflow-y: auto;
   left: 10px;
 }
-
 .wrapper {
   padding: 10px;
   width: 100%;
   height: 100%;
   transform: scale(0.5);
 }
-
-/* Media query para telas menores */
 @media screen and (max-width: 780px) {
   .content {
     width: 50%;
@@ -32,7 +26,6 @@
     padding: 10px;
     margin-left: 195px;
     margin-right: 100%;
-
     margin-top: 25px;
   }
   .wrapper {
@@ -40,15 +33,12 @@
     width: 100%;
     height: 100%;
     transform: scale(0.5);
-    
-     
   }
 }
-
 .Center {
-  display: flex; /* Torna o container um flex container */
-  justify-content: center; /* Centraliza o container horizontalmente */
-  align-items: center; /* Centraliza o container verticalmente */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   width: 100%;
   margin-left: 60px;
 }
