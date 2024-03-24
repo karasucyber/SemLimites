@@ -29,9 +29,10 @@ const Container = styled.div`
 `;
 
 const ContainerBar = styled.div`
+  height: 65px;
+  width: 100px;
   margin: 10px;
   padding: 10px;
-  height: 50px;
   display: flex;
   justify-content: center;
   font-size: 20px;
@@ -95,7 +96,7 @@ export const NavBar = () => {
    <Controller isOpen={dropdownOpen}>
    <DropdownContainer>
         <ContainerBar onClick={toggleDropdown}>
-          <GiHamburgerMenu size={30} />
+          <GiHamburgerMenu size={40} />
         </ContainerBar>
         <DropdownContent isOpen={dropdownOpen}>
           <ContainerBar>
