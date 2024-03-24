@@ -70,7 +70,7 @@ const DropdownContent = styled.div<{ isOpen: boolean }>`
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 10);
   z-index: 1000;
   @media (max-width: 768px) {
-    width: 410px;
+    width: 100%;
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
 
   }
