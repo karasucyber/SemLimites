@@ -29,13 +29,13 @@ const Container = styled.div`
 `;
 
 const ContainerBar = styled.div`
-  height: 65px;
+  heigh45px;
   width: 100px;
   margin: 10px;
   padding: 10px;
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-size: 16px;
   background: rgba(217, 217, 300, 0.2);
   border-radius: 10px;
   transition: background 0.3s; // Adiciona uma transição suave para a mudança de cor ao passar o mouse
@@ -65,12 +65,11 @@ const DropdownContainer = styled.div`
 const DropdownContent = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   position: absolute;
-  top: 100%;
   left 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 10);
-  z-index: 1000;
+  z-index: 1;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 350px;
     display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
 
   }
@@ -80,7 +79,7 @@ const Controller = styled.div<{ isOpen: boolean }>`
 @media (max-width: 768px) {
   height: ${({ isOpen }) => (isOpen ? '200px' : '100px')};
   
-}
+
 `;
 
 export const NavBar = () => {
