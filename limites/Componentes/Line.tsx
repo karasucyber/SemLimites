@@ -30,7 +30,7 @@ const NextButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 50px;
   color: #333; /* Cor do botão, ajuste conforme necessário */
 `;
 
@@ -42,8 +42,9 @@ const PrevButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 50px;
   color: #333; /* Cor do botão, ajuste conforme necessário */
+  z-index: 1;
 `;
 
 const companies: any[] = ["F1.png", "F2.png", "F3.png","F4.png","F5.png","F6.png","F7.png","F8.png","F9.png","F1.png", "F2.png", "F3.png","F4.png","F5.png","F6.png","F7.png","F8.png","F9.png",];

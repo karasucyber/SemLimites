@@ -73,7 +73,7 @@ export default function PageBolsista(){
         <ReactPlayer
   url="https://www.youtube.com/watch?v=dCF9wvpQ5wQ&feature=youtu.be"
   width="80%"
-  height="80%"
+  height="100%"
   style={{
     boxShadow: "0 8px 16px rgba(213, 229, 40, 0.8)",
   }}/>
