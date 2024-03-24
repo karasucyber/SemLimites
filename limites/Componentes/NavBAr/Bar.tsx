@@ -25,7 +25,7 @@ const Container = styled.div`
   &:hover {
     animation: ${borderAnimation} 1.5s infinite; /* Adiciona a animação no hover */
     border-bottom-color: darkgray;
-    width: 100%;
+    width: 80%;
 
   }
 `;
@@ -80,7 +80,6 @@ const DropdownContent = styled.div<{ isOpen: boolean }>`
 const Controller = styled.div<{ isOpen: boolean }>`
 @media (max-width: 768px) {
   height: ${({ isOpen }) => (isOpen ? '200px' : '100px')};
-  
 
 `;
 
