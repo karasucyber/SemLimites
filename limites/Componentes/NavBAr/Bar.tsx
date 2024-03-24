@@ -18,8 +18,8 @@ const borderAnimation = keyframes`
 const Container = styled.div`
   display: flex;
   margin: 10px;
-  width: 50%;
-  justify-content: flex-end;
+  width: 80%;
+  justify-content: flex-start;
   border-radius: 50px;
   transition: border-bottom 0.3s ease;
   &:hover {
@@ -65,18 +65,19 @@ const DropdownContent = styled.div<{ isOpen: boolean }>`
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   position: absolute;
   top: 100%;
-  right: 0;
+  left 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 10);
   z-index: 1000;
   @media (max-width: 768px) {
-    width: 160px;
-    min-width: unset;
+    width: 410px;
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+
   }
 `;
 
 const Controller = styled.div<{ isOpen: boolean }>`
 @media (max-width: 768px) {
-  height: ${({ isOpen }) => (isOpen ? '300px' : '100px')};
+  height: ${({ isOpen }) => (isOpen ? '200px' : '100px')};
   
 }
 `;
